@@ -1,0 +1,56 @@
+<div  ng-controller="admindetailsCtrl" class="ionic primary-bg-color" style="background-color:#5773c0">
+<div>      
+            <ion-header-bar class="bar header" style="background-color: #5773c0;">
+      <h1 class="title" style="color:white">Admin</h1>
+	  <button class="button icon-right ion-log-out" ng-click="signout()" style="background-color: transparent; border-color: transparent;color:white"></button>
+    </ion-header-bar>   
+
+        </div>    
+<!--    <img id="main-banner-image" src="img/icon/GoCar-Logo4.png" />-->
+    
+    <ion-content  overflow-scroll="true" style="background-color:#5773c0">
+        <div class="list">
+<!--        <div class="signin-box" style="width: 90%; margin: 69px auto 0; background-color: rgba(255, 255, 255, 0.9) !important; color: #777; text-align: center; padding: 25px; position: relative;height:100%;" >-->
+        <div class="card" style="text-align: center; background-color: transparent; box-shadow: inherit;margin: -20px -17px;">
+<!--            <header>     <button class="button icon-left ion-log-out" ui-sref="signout" style="background-color: transparent; border-color: transparent;text-align: right;"> Log Off</button></header>-->
+        <p style="font-size:18px; padding:30px;color:white"><strong>Welcome To True Josh Admin!</strong></p>
+        <p style="color:white">Click Here To Download Trip Details</p>
+         <button class="button button-outline button-positive" style="border-color: white;color:white;background-color: #5773c0" ng-click="downloadreport()" ng-disaabled="myBtn">
+              Download Report
+         </button> 
+            
+        </div>
+		
+<div class="list" style="margin-top:25px;">
+    <h4 style="margin-left:25px;color:white"><strong>Driver Top-Up</strong></h4>
+    <label class="item item-input item-floating-label">
+                       <div style="position: absolute; bottom: 12px;">
+                            <img border="1" class="" src="img/icon/car2.png" alt="" style="width: 28px;" >
+                        </div>
+                        <div style="margin-left:32px;">
+<!--                            <span class="input-label">Enter Vehicle No</span>-->
+                            <input type="text" id="vehicleno" ng-model="vehicleno" placeholder="Enter Vehicle No" style="color:white">
+                        </div>    
+                    </label>
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+                            <img border="1" class="" src="img/icon/dollar.png" alt="" style="width: 20px;" >
+                        </div>
+            <div style="margin-left:32px;">
+<!--                <span class="input-label">Top-Up Amount</span>-->
+                <input type="text" id="topupamt" placeholder="Top-Up Amount" ng-model="topupamt" style="color:white">
+                
+            </div>
+        </label><br/>
+        <div style="margin-left:25px;">
+    <button class="button button-outline button-positive" style="border-color: white;color:white;background-color: #5773c0" ng-click="topup(vehicleno,topupamt)" ng-disabled="myBtn">
+              Top-Up
+              </button>
+       
+        </div>
+    
+</div>
+    
+<!--        </div>-->
+        </div>
+    </ion-content>

@@ -1,0 +1,49 @@
+<div  ng-controller="scheduledCtrl" style="background-color:#5773c0" >
+    
+  <div>
+            
+            <ion-header-bar style="background-color: #5773c0;">
+                <button class="button icon-left ion-android-arrow-back" ui-sref="map" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white">Scheduled</h1>
+    </ion-header-bar>
+        </div>
+    
+    <ion-content style="margin-top: 44px;" overflow-scroll="true" >
+        <div class="list" >
+          
+            <a class="item " href="#" target="_self" ng-click="goToSelectedrecord(x)" ng-repeat="x in dbValue" >
+
+		<table style="font-family:helvetica,sans-serif; font-size:14px;">
+	
+		<tr>
+		<td><b>Pick Up :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.pickup}}</td>
+		</tr>
+		
+		
+			<tr>
+		<td><b>Destination :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.destination}}</td>
+		</tr>
+		
+		
+			<tr>
+		<td><b>Book Time :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.booktime}}</td>
+		</tr>
+		
+		
+				
+		</table>
+				
+               
+			  <input type="hidden" value={{x.recid}} >
+            </a>
+        </div> 
+		
+		
+      
+ 
+        
+    </ion-content>
+</div>

@@ -1,0 +1,39 @@
+<div  ng-controller="testCtrl">
+    
+
+        <div>
+            
+            <ion-header-bar class="bar-positive">
+      <h1 class="title">Choose Destination</h1>
+    </ion-header-bar>
+        </div>
+    <ion-content>
+        <div>
+     
+     
+    
+            <div width="80%" class="list list-inset" style="margin-left:10%;margin-right:10%;">
+                <label class="item item-input">
+                    <input type="text" ng-model="user.dest" placeholder="Destination">
+                </label>
+                   <label class="item item-input item-floating-label">
+            <div class="row">
+                <ion-radio class="col-50" ng-model="pickType" ng-value="'InCity'">In city</ion-radio>
+                <ion-radio class="col-50" ng-model="pickType" ng-value="'Airport'">To AirPort</ion-radio>
+            </div>
+        </label>   
+                <label class="item item-input item-floating-label">
+            <div class="row">
+                <button class="button button-full button-positive" style="border-color: black;" ng-click="saveDetails()">
+                  Pick Now
+                </button>
+                 <button class="button button-full button-positive" style="border-color:black;" ng-click="saveDetails()">
+                  Pick Later
+                </button>
+            </div>
+                </label>
+            </div>
+        </div>
+
+    </ion-content>
+</div>

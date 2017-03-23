@@ -1,0 +1,33 @@
+<div ng-controller="changepwdCtrl" style="background-color: #5773c0;" >
+    <div style="background-color: #5773c0;" class="bar bar-header bar-balanced " >
+        <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+        <h1 class="title" style="color:white;">Change Password</h1>
+    </div><br><br>
+    <div class="list">
+
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+                <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label" style="color:white">Password</span>
+                <input type="password" placeholder="New Password" style="color:white" ng-model="pwd">
+            </div>
+        </label>
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+                <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label" style="color:white">Confirm Password</span>
+                <input type="password" placeholder="Confirm New Password" ng-model="cpwd" style="color:white">
+            </div>
+        </label>
+    </div>
+    <center>
+    <button class="button button-block button-positive" ng-click="go(pwd,cpwd)" style="width:50%;background-color:#5773c0;color:white;border-color:white" ng-disaabled="myBtn">
+              Go
+        </button>
+    </center>
+    
+</div>

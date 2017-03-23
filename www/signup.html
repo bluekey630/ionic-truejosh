@@ -1,0 +1,80 @@
+<div ng-form name="myForm" ng-controller="signupCtrl" style="background-color:#5773c0" >
+    <div class="bar bar-header " style="background-color:#5773c0;">
+        <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="  border-color: transparent;color: white;background-color:transparent"></button>
+        <h1 class="title" style="color:white;"><b>Passenger Sign Up</b></h1>
+    </div><br><br>
+	<ion-content style="margin-top: 44px;" overflow-scroll="true">
+    <div class="list">
+	
+	<label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 6px; right:15px">
+                <li class="ion-person" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:7px;">
+                <span class="input-label" style="color:white">Username</span>
+                <input type="text" placeholder="Username" ng-model="username" style="color:white">
+            </div>
+        </label>
+            
+        <label class="item item-input item-floating-label">
+            
+            <div style="margin-left:7px;">
+                <span class="input-label" style="color:white">Enter Email</span>
+                <input type="text" placeholder="Enter Email" ng-model="email" ng-change="chkEmail(email)" style="color:white">
+                <span ng-show="wrong" ng-hide="email">Please enter valid Email address</span>
+            </div>
+            <div style="position: absolute; bottom: 4px;right:15px">
+                <li class="ion-email" data-pack="default" data-tags="snail, mail, inbox" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+        </label>
+		<label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 4px; right:15px">
+                <li class="ion-email" data-pack="default" data-tags="snail, mail, inbox" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:7px;">
+                <span class="input-label" style="color:white">Re-enter Email</span>
+                <input type="text" placeholder="Re-enter Email" ng-model="cemail" ng-change="chkEmail1(cemail)" style="color:white">
+                <span ng-show="wrong1" ng-hide="cemail">Please enter valid Email address</span>
+            </div>
+        </label>
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;right:15px">
+                <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:7px;">
+                <span class="input-label" style="color:white">Enter Password</span>
+                <input type="password" placeholder="Enter Password" ng-model="pwd" style="color:white">
+            </div>
+        </label>
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px; right:15px">
+                <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:7px;">
+                <span class="input-label" style="color:white">Re-enter Password</span>
+                <input type="password" placeholder="Re-enter Password" ng-model="cpwd" style="color:white">
+            </div>
+        </label>
+		<label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;right:15px">
+                <li class="ion-android-call" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+            </div>
+            <div style="margin-left:7px;">
+                <span class="input-label" style="color:white">Mobile Number</span>
+                <input type="number" placeholder="Mobile Number" name="phone" ng-model="mobileno" ng-pattern="phoneNumbr" ng-required="false" style="color:white">
+				
+            </div>
+        </label><br/>
+		 <p style="margin-right:120px;color:red;padding-top:10px;" ng-show="myForm.phone.$error.pattern">Please match pattern [91910202]</p> 
+		<p style="margin-left:10px;font-style:italic;color:white">Your e-receipts will be sent to the above email</p>
+    </div>
+    
+    <!--<button class="button button-block button-positive" ng-click="go(accType,username,email,cemail,pwd,cpwd,mobileno)" style="margin: 40px auto 10px; border-radius: 33px; width: 10px; background-color: #eb2135 !important; border-color:darkred !important; min-width: 55px; min-height: 55px;padding: 0;" ng-disaabled="myBtn">
+              Go
+        </button>-->
+        <center><button class="button button-block button-positive signup" ng-click="go(accType,username,email,cemail,pwd,cpwd,mobileno)" style="border:1px solid white;background-color:#5773c0;width:50%" ng-disaabled="myBtn">
+                        
+                        <div  class="signupdiv" style="display: inline-block; font-size:14px; text-transform: uppercase;color:white;"><b>Go</b></div>
+                    </button></center>
+		</ion-content>
+</div>

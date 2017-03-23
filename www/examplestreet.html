@@ -1,0 +1,49 @@
+<div ng-controller="riderDest">
+
+    <ion-pane>
+
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">My Map</h1>
+      </ion-header-bar>
+      <ion-content>
+
+      <div class="padding">
+        
+        <div class="list">
+          <label class="item" for="start">
+            <input id="origin" placeholder="Départ" value=""
+            places-auto-complete
+            types="text"
+            ng-model="origin"
+            ng-disabled="drivingMode"
+            component-restrictions="{country:'tn'}"
+            style="border: none; width: 100%" />
+          </label>
+        </div>
+
+        <div class="list">
+          <label class="item" for="end">
+            <input id="destination" placeholder="Arrivée" value=""
+            places-auto-complete
+            types="text"
+            ng-model="destination"
+            ng-disabled="drivingMode"
+            component-restrictions="{country:'tn'}"
+            style="border: none; width: 100%" />
+          </label>
+        </div>
+
+      </div>
+
+      <div map-lazy-load="https://maps.google.com/maps/api/js" data-tap-disabled="true">
+        <ng-map center="current-location" zoom="16"  min-zoom="6">
+          <marker position="current-location" centered="true" animation="DROP"></marker>
+          <directions origin="{{origin}}" travel-mode="DRIVING" destination="{{destination}}" > </directions>
+        </ng-map>
+      </div>
+      </ion-content>
+
+
+    </ion-pane>
+  </div>
+

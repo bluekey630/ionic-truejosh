@@ -1,0 +1,50 @@
+<div  ng-controller="choosedateCtrl" class="ionic primary-bg-color">
+    
+  <div>
+            
+            <ion-header-bar style="background-color: #5773c0;">
+                <button class="button icon-left ion-android-arrow-back" ng-click="back()" onclick="window.history.back()" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white">Pick Date</h1>
+    </ion-header-bar>
+        </div>
+    
+<!--    <ion-content style="margin-top: 44px;" overflow-scroll="true">-->
+        <ion-content style="margin-top: 44px;">
+        <div class="list" ><br/>
+            
+        
+                      <div >
+                          <h4 style="margin-left:28px;"> Select Your Travel Date and Time </h4><br/>
+<!--                        <a href="javascript:NewCssCal('traveldate','yyyyMMdd','dropdown',true,'24',true)">
+                            <img src="img/cal.gif" width="16" height="16" border="0" alt="Pick a date">
+                        </a>
+	  		<span class="descriptions">Pick Your Date..</span><br/><br/>-->
+                        
+                        <label class="item item-input item-floating-label" >
+<!--                                <div class="row">-->
+                                    <!-- <a href="javascript:NewCssCal('traveldate','yyyyMMdd','dropdown',true,'24',true)" >
+                                        <img src="img/cal.gif" width="20" height="20" border="0" alt="Pick a date" >
+                                    </a>
+                                    <input type="text" id="traveldate" ng-model="traveldate" placeholder="Pick Your Date" style="margin-left:25px;" readonly="readonly">
+ -->
+							<input type="datetime-local" id="traveldate" ng-model="traveldate" placeholder="Pick Your Date" >
+<!--                                </div>-->
+
+                            </label><br/><br/>
+                <center>
+                  <button class="button button-outline button-positive col-50" style="margin-left:28px;border-color:white;color:white;background-color: #5773c0" ng-click="confirm()" ng-disaabled="myBtn">
+                  Confirm
+                </button>        
+                </center>       		                        
+                
+	 
+
+                </div>
+         
+           
+        </div> 
+      
+ 
+        
+    </ion-content>
+</div>

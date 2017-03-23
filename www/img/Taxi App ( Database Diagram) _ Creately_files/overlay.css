@@ -1,0 +1,162 @@
+@CHARSET "ISO-8859-1";
+
+* html.popup-open body {
+	height:100%;
+}
+* html.popup-open, * html.popup-open body {
+	overflow:hidden;
+}
+
+/*For IE*/
+html.popup-open-reduce object, html.popup-open-reduce embed, * html.popup-open-reduce select {
+	height:0%;
+}
+
+/*For everyone else*/
+html.popup-open-hide object, html.popup-open-hide embed, * html.popup-open-hide select {
+	visibility:hidden;
+}
+
+* html .creately-overlay {
+	width:110%;
+}
+* html .creately-popup .creately-popup-close {
+	background:#101410 none repeat scroll 0 0;
+}
+
+.creately-popup-content {
+	background-color:#FFFFFF;
+	display:none;
+}
+
+.creately-popup-border {
+	background-color:#d4d4d4;
+	display:none;
+	padding:1px;
+}
+
+.creately-popup{
+	position:absolute;
+	z-index:100003;
+	display:none;
+	text-align:left;
+	width:auto;
+	height:auto;
+	left:0px;
+	top:0px;
+	-webkit-box-shadow: 0 2px 8px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 2px 8px 1px rgba(0,0,0,0.75);
+	box-shadow: 0 2px 8px 1px rgba(0,0,0,0.75);
+}
+
+.creately-popup-working {
+	z-index:100004;
+	display:none;
+	background-color:#FFFFFF;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+.creately-overlay{
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:#1d1d1d;
+	z-index:100002;
+	width:100%;
+	height:100%;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	display: none;
+}
+
+.creately-popup[id], .creately-overlay[id] {
+	position:fixed;
+}
+
+.creately-popup td {
+	-x-system-font:none;
+	color:#000000;
+	font-family:arial,sans-serif;
+	font-size:14px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	letter-spacing:-1px;
+	line-height:normal;
+	margin:0;
+	padding:1px;
+	text-align:right;
+}
+
+.creately-popup input {
+	/*
+	-x-system-font:none;
+	color:#000000;
+	font-family:arial,sans-serif;
+	font-size:14px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	line-height:normal;
+	margin:0;
+	padding:1px;
+	*/
+}
+
+#pCloseLink {
+	font-family:arial,sans-serif;
+	letter-spacing:-1px;
+	position:absolute;
+	top:230px;
+	left:264px;
+	font-size:14px;
+}
+
+#pActionLink {
+	font-family:arial,sans-serif;
+	letter-spacing:-1px;
+	font-size:14px;
+}
+
+#pContent {
+	display:block;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#pSave {
+	width:100%;
+	font-family:arial,sans-serif;
+	letter-spacing:2px;
+}
+
+a.creately-popup-close {
+	background: url('/images/login/login-sprite.png') no-repeat top left;
+	background-position: 0 -252px;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	overflow:hidden;
+	z-index:4;
+	height: 9px;
+	width: 9px;
+	cursor: pointer;
+	top: 15px;
+	right: 15px;
+	position: absolute;
+	margin: 0;
+}
+
+/* Free plan reminder popup */
+#pContent #reminder-popup-wrapper { background: url(/images/signup_popup_sprite.png) no-repeat 250px -200px;  }
+#pContent #reminder-popup-wrapper h3 { font:bold 1.1em/1em verdana, serif;  }
+#pContent #reminder-popup-wrapper p { font-weight: normal; line-height: 1.3em; font-size: 1em; }
+#pContent #reminder-popup-wrapper #reminder-buttons { }
+#pContent #reminder-popup-wrapper #reminder-buttons a { margin: 5px 10px; }
+#pContent #reminder-popup-wrapper #reminder-buttons a img { border: none; }

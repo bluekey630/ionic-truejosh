@@ -1,0 +1,114 @@
+<!-- <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+<div style="background-color:#fff;" id="signin" ng-controller="signinCtrl">  
+    <img id="main-banner-image" src="" style="background-color:#5773c0" />
+    <img class="main-banner-image" />
+    <ion-content style="padding-top: 44px;">
+    <div class="signin-box" style="width: 90%; margin: 10px auto 0;  color: #777; text-align: center; padding: 25px; position: relative;" >
+        <div class="card" style="text-align: center; background-color: transparent; box-shadow: inherit;margin: -20px -17px;">
+            <!-- <div class="item item-divider" style="background-color: initial;"
+                Welcome to <Strong>First Impression!</Strong>
+            </div> -->
+            <center><img src="img/icon/logo2.png" width="150px" alt="googleplay"></center>
+            <!--<p style="font-size:18px">Welcome to <Strong style="font-size:25px;">True <span style="color: #eb2135;">J</span>osh</Strong></p>
+           <p style="font-size:18px">Sign In</p>-->
+            <label class="item item-input item-floating-label" style="border-top: 0;">
+                <div style="position: absolute; bottom: 4px;">
+                    <li class="ion-email" data-pack="default" data-tags="snail, mail, inbox" style="list-style-type: none; font-size: 25px; color:white;"></li>
+                </div>
+                <div style="margin-left:32px;">
+                    <span class="input-label" style="color:white;width:0%;font-weight:bold">Email/Username</span>
+                    <input type="text" placeholder="Email/Username" style="color:white;" ng-model="emai">
+                </div>
+            </label>
+            <label class="item item-input item-floating-label">
+                <div style="position: absolute; bottom: 8px;">
+                    <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:white;"></li>
+                </div>
+                <div style="margin-left:32px;">
+                    <span class="input-label" style="color:white;font-weight:bold;width:0%;">Password</span>
+                    <input type="Password" placeholder="Password" style="color:white;" ng-model="password">
+                </div>
+            </label>
+            <!--<button class="button button-block button-positive" ng-click="signin(emai,password)" style="margin: 9px auto 11px; border-radius: 33px; width: 10px; background-color: #eb2135!important; border-color:darkred !important; min-width: 55px; min-height: 55px;padding: 0;">
+              LOGIN
+            </button>-->
+            <button class="button button-block button-positive" ng-click="signin(emai,password)" style="background-color:#5773c0;border:0px">LOGIN</button>
+            <!-- <div class="item item-divider">
+                <p style="font-size:12px">Not a member?</p>
+                <button ui-sref="signup" class="button button-clear button-positive">Sign Up</button></p>
+                <button class="button button-clear button-positive" >Forgot Password</button>
+            </div> -->
+				<!-- <div class="cust-row clear-fix member-sign-up" > -->
+      <button class="tab-item button button-clear button-positive" ui-sref="forgotpassword" style="max-width: 100%;">
+            <!--<li class="ion-android-unlock" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 18px; color: black; display: inline-block;top:40px;"></li>-->
+            <div style="display: inline-block;font-size:14px; text-transform: uppercase; color:white;"><b>Forgot Your Password</b></div>
+           
+
+            
+        </button>
+      <!--   </div> -->
+        </div>
+        <div class="tabs tabs-icon-only cust-tab" style="position: inherit; background-color: initial;margin-top:18px;">
+            <div class="cust-row clear-fix member-sign-up">
+                <!-- <div class="cust-col-50 member">Not a member?</div> -->
+                
+               <!--<div >
+                    <center><button class="tab-item button button-clear button-positive" ui-sref="signup" style="max-width:170px;">
+                        <li class="ion-person-add" data-pack="default" data-tags="users, staff, head, human, member, new" style="list-style-type: none; font-size: 18px; color: #eb2135; transform: rotateY(180deg); display: inline-block;"></li>
+                        <div style="display: inline-block; font-size:14px; text-transform: uppercase;color:black;">Passenger Sign up</div>
+                    </button></center>
+                    <center><button class="tab-item button button-clear button-positive" ui-sref="driversignup" style="max-width:170px;">
+                        <li class="ion-person-add" data-pack="default" data-tags="users, staff, head, human, member, new" style="list-style-type: none; font-size: 18px; color: black; transform: rotateY(180deg); display: inline-block;"></li>
+                        <div style="display: inline-block; font-size:14px; text-transform: uppercase;color:black;">Driver Sign up</div>
+                    </button></center>
+					
+                     </div>-->
+                
+                <div>
+                <center><button class="button button-block button-positive signup" ui-sref="signup" style="border:1px solid white;background-color:#5773c0;">
+                        
+                        <div class="signupdiv" style="display: inline-block; font-size:14px; text-transform: uppercase;color:white;"><b>Passenger Sign up</b></div>
+                    </button></center>
+                </div>
+                
+                 <div>
+                <center><button class="button button-block button-positive signup" ui-sref="driversignup" style="border:1px solid white;background-color:#5773c0;">
+                        
+                        <div  class="signupdiv" style="display: inline-block; font-size:14px; text-transform: uppercase;color:white;"><b>Driver Sign up</b></div>
+                    </button></center>
+                </div>
+                
+            </div>
+        </div><br/>
+		
+	
+    </ion-content>
+	<!--<center><img src="img/icon/logo2.png" style="top:45px;position:relative;" width="200px" alt="googleplay"></center>-->
+    
+</div>
+
+</div>
+<style>
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white  !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white  !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white  !important;
+}
+.signup:hover
+    {
+        border: 1px solid #87ceeb !important;
+        background-color: white !important;
+        color:red !important;
+    }
+.signupdiv:hover
+    {
+        color:red !important;
+    }
+</style>

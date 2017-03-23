@@ -1,0 +1,21 @@
+<div ng-form name="myForm" style="background-color: #5773c0;" ng-controller="PromotionCtrl" ng-init="toggleGroup(1)">
+  <div>  
+    <ion-header-bar style="background-color: #5773c0;">
+      <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="background-color: #5773c0; border-color: transparent;color: white;">        
+      </button>
+      <h1 class="title" style="color:white">True Josh</h1>
+    </ion-header-bar>
+
+  </div>
+  
+  <ion-content style="margin-top:50px;">
+	
+    <div style="width: 100%;height: 100%;border:0px solid red;">
+    	<!-- <img ng-src="{{video.face}}" style="width: 64px; height: 64px"> -->		
+    	<!-- <img ng-src="{{video.face}}"> -->
+    	<video playsinline="ture" webkit-playsinline="true" controls autoplay ng-src="{{video.video}}", style="width: 100%;height: 100%;border:0px solid red;"></video>
+    </div>
+
+  </ion-content>
+
+</div>

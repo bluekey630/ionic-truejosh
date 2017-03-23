@@ -1,0 +1,128 @@
+<div ng-form name="myForm" ng-controller="addcardCtrl" style="background-color:#5773c0">
+<div>  
+    
+            <ion-header-bar style="background-color: #5773c0;">
+                <button class="button icon-left ion-android-arrow-back" ui-sref="map" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white;">Add/Update</h1>
+     </ion-header-bar>
+
+        </div>
+
+    <ion-content>
+        
+      
+        <div class="list" >
+            <h4 style="padding-left:20px; text-decoration:underline; color:white"><b>Registered Card</b></h4>
+			<div  ng-show="shownorec">
+			<p style="padding-left:20px; color:white">No Records Found.</p>
+			</div>
+            <div style="padding-left:20px;" ng-show="showyesrec">
+<!--            <a  style="background-color:transparent; " href="#" target="_self"  ng-repeat="x in dbValue">-->
+            <div ng-repeat="x in dbValue">
+                <p style="color:white"><strong>Card Number:</strong> {{x.cardnumber}}</p>
+			  
+              <p style="color:white"><strong>Expiration Date:</strong> {{x.expirationdate}}</p>
+			  <p style="color:white"><strong>FirstName:</strong> {{x.firstname}}</p>
+			  <p style="color:white"><strong>LastName:</strong> {{x.lastname}}</p>
+			  <p style="color:white"><strong>Email:</strong> {{x.email}}</p>
+              <div style="color:white">To Pay with above card click proceed </div><br/>
+              <button class="button button-outline button-positive" style="border-color:white;color:white;background-color: #5773c0" ng-click="proceed(x.recid)" ng-disaabled="myBtn">
+              Proceed
+              </button>
+            </div>                           
+<!--            </a>-->
+            </div>
+<!--            <div >
+            <a class="item item-thumbnail-left" href="#" target="_self"  ng-repeat="y in h1">
+              
+              <h2>CustomerID {{y.hour}}</h2>
+              <span id="hour"> {{y.hour}}</span>
+              
+            </a>
+            </div>-->
+        </div>      
+           
+        
+    <div>
+        <span style="padding-left:12px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;color:white">Update your card details below if added already / Add for primary card.</span><br/>
+    </div>	
+   
+    <div class="list">
+            
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+<!--                <li class="ion-email" data-pack="default" data-tags="snail, mail, inbox" style="list-style-type: none; font-size: 25px; color:black;"></li>-->
+<!--                    <img src="img/creditcard.png" />-->
+                        <img src="img/cvv.png" style="height:30px;width:30px;padding-top:5px;">
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label"> Card Number</span>
+                <input type="text" placeholder="Card Number" ng-model="cardnumber" ng-minlength="15" ng-maxlength="16" name="cardno" required style="padding-left:5px;color:white" >
+<!--                <span ng-show="wrong" ng-hide="email">Please enter valid Email address</span>-->
+            </div>
+        </label>
+		<span style="color:white;margin-left:32px;background-color:red;padding-right:5px;padding-left:5px" ng-show="myForm.cardno.$error.required">
+        Please Enter Valid Card Number</span>
+		<span style="color:white" class="error" ng-show="myForm.cardno.$error.minlength">Not less that 15 digits.</span>
+		<span style="color:white" class="error" ng-show="myForm.cardno.$error.maxlength">Not more than 16 digits.</span>
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+<!--                <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:black;"></li>-->
+                    <img src="img/icon/date.svg" style="height:30px;width:30px;padding-top:5px;">
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label">Expiration Date</span>
+                <input type="text" placeholder="Expiration Date MM/YYYY" ng-model="expirationdate"  style="color:white" >
+            </div>
+        </label>
+		
+        <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+                <img src="img/cvv.png" style="height:30px;width:30px;padding-top:5px;">
+<!--                <li class="ion-locked" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:black;"></li>-->
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label">CVV</span>
+                <input type="text" placeholder="CVV" ng-model="cvv" style="padding-left:5px;color:white">
+            </div>
+        </label>
+		
+		 <label class="item item-input item-floating-label">
+                       <div style="position: absolute; bottom: 8px;">
+                            <img border="1" class="" src="img/icon/account.svg" alt="" style="width: 28px;" >
+                        </div>
+                        <div style="margin-left:32px;">
+                            <span class="input-label">FirstName</span>
+                            <input type="text" id="firstname" ng-model="firstname" style="color:white"   placeholder="Enter FirstName">
+                        </div>    
+                    </label>
+					
+					 <label class="item item-input item-floating-label">
+                       <div style="position: absolute; bottom: 8px;">
+                            <img border="1" class="" src="img/icon/account.svg" alt="" style="width: 28px;" >
+                        </div>
+                        <div style="margin-left:32px;">
+                            <span class="input-label">LastName</span>
+                            <input type="text" id="lastname" ng-model="lastname" style="color:white"   placeholder="Enter LastName">
+                        </div>    
+                    </label>
+					
+					<label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+                <li class="ion-email" data-pack="default" data-tags="snail, mail, inbox" style="list-style-type: none; font-size: 25px; color:black;"></li>
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label">Email</span>
+                <input type="text" placeholder="Email" ng-model="email" style="color:white"  >
+                
+            </div>
+        </label>
+		
+    </div>
+    <center>
+    <button class="button button-block button-positive" ng-click="go(cardnumber,expirationdate,cvv,firstname,lastname,email)" style="width:50%;border:1px solid white; background-color:#5773c0" ng-disaabled="myBtn">
+              Go
+        </button>
+    </center>
+		 </ion-content>
+</div>

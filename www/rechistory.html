@@ -1,0 +1,44 @@
+<div  ng-controller="rechistoryCtrl" style="background-color:#5773c0">
+    
+  <div class="bar bar-header bar-balanced " ng-repeat="x in dbValue">
+            
+            <ion-header-bar style="background-color: #5773c0;">
+                <button class="button icon-left ion-android-arrow-back" ui-sref="history" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white;">{{x.booktime}}</h1>
+    </ion-header-bar>
+        </div>
+    
+    <ion-content style="margin-top: 44px;" overflow-scroll="true" >
+	<label class="item item-input item-floating-label" style="background-color:gold;" ng-repeat="x in dbValue">
+	<p style="font-family:helvetica,sans-serif;color:white;"><b>Booking ID : {{x.recid}}</b></p>
+	
+	</label><br/><br/>
+        <div class="list" >
+		<div class="item" ng-repeat="x in dbValue" style="background-color:#5773c0">
+		<img src="img/logo3.png" style="height:60px; width:60px;"></img>
+		<p style="font-family:helvetica,sans-serif;color:white "><strong>Driver ID <span style="padding-left:32px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.acceptedby}}</span></p>
+		</div>
+         
+            <div class="item" ng-repeat="x in dbValue" style="background-color:#5773c0" >
+			
+			
+
+                <p style="font-family:helvetica,sans-serif;color:white"><strong>Pickup <span style="padding-left:42px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.pickup}}</span></p>
+              <p style="font-family:helvetica,sans-serif;color:white"><strong>Destination <span style="padding-left:13px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.destination}}</span> </p>
+              
+              <p style="font-family:helvetica,sans-serif;color:white"><strong>Car Type<span style="padding-left:33.8px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.picktype}}</span></p>
+              <p style="font-family:helvetica,sans-serif;color:white"><strong>Paid Amount<span style="padding-left:8px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.paidamount}}</span></p>
+              <p style="font-family:helvetica,sans-serif;color:white"><strong>Book Status<span style="padding-left:12px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.bookstatus}}</span></p>
+			  <p style="font-family:helvetica,sans-serif;color:white"><strong>Payment <br/>Method<span style="padding-left:40px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.pymtmethod}}</span></p>
+			  
+            </div>
+        </div> <br/><br/>
+		
+		   <div width="80%" class="list list-inset" style="margin-left:10%;margin-right:10%;">  
+				 <button class="button button-full button-positive" ui-sref="support" style="background-color: #5773c0;border-color:white;margin-top:0px;margin-bottom:0px;border-left:1px solid white;border-right:1px solid white">
+                 Report An Issue
+                </button>
+				</div>
+        
+    </ion-content>
+</div>

@@ -1,0 +1,119 @@
+<div  ng-controller="historyCtrl" >
+    
+  <div>
+            
+            <ion-header-bar style="background-color: #eb2135;">
+                <button class="button icon-left ion-android-arrow-back" ui-sref="map" style="background-color: #eb2135; border-color: transparent;color: #34495E;"></button>
+      <h1 class="title">History</h1>
+    </ion-header-bar>
+        </div>
+    
+    <ion-content style="margin-top: 44px;" overflow-scroll="true" >
+        <div class="list" >
+          
+            <a class="item " href="#" target="_self" ng-click="goToSelectedrecord(x)" ng-repeat="x in dbValue" >
+<!--              <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">Pickup</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.pickup}}</div>
+			</span>
+		</div><br/>
+                <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">Destination</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.destination}}</div>
+			</span>
+		</div>
+                <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">Book Time</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.booktime}}</div>
+			</span>
+		</div>
+                <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">Car Type</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.picktype}}</div>
+			</span>
+		</div>
+                <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">paid Amount</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.paidamount}}</div>
+			</span>
+		</div>
+                <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">Book Status</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.bookstatus}}</div>
+			</span>
+		</div>
+                <div class="button-bar" style="width: 260px; margin:0 auto; float:left;">
+			<span class="button icon-left button-positive primary-bg-color" ng-click="changeState();" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">Pickup</div>
+			</span>
+			<span class="button icon-left button-positive primary-bg-color" ui-sref="search" style="margin: 10px; border-color: transparent; padding: 0 5px; line-height: 26px;">
+				<div style="font-size:14px; text-transform: uppercase; color:grey;">{{x.pickup}}</div>
+			</span>
+		</div>-->
+		
+				
+                <p style="font-family:helvetica,sans-serif; "><strong>Pickup <span style="padding-left:42px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.pickup}}</span></p>
+              <p style="font-family:helvetica,sans-serif;"><strong>Destination <span style="padding-left:10px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.destination}}</span> </p>
+              <p style="font-family:helvetica,sans-serif;"><strong>Book Time<span style="padding-left:20px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.booktime}}</span></p>
+              <!-- <p style="font-family:helvetica,sans-serif;"><strong>Car Type<span style="padding-left:33.8px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.picktype}}</span></p>
+              <p style="font-family:helvetica,sans-serif;"><strong>Paid Amount<span style="padding-left:6.8px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.paidamount}}</span></p>
+              <p style="font-family:helvetica,sans-serif;"><strong>Book Status<span style="padding-left:11.1px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.bookstatus}}</span></p>
+			  <p style="font-family:helvetica,sans-serif;"><strong>Book ID<span style="padding-left:40px;">:</span></strong><span style="padding-left:10px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-align: justify; text-justify: distribute;">{{x.recid}}</span></p> -->
+			  <input type="hidden" value={{x.recid}} >
+            </a>
+        </div> 
+		
+		<!-- <table>
+	<thead>
+	<tr>
+		<th style="text-align:center;">PickUp</th>
+		<th style="text-align:center;">Destination</th>
+		<th style="text-align:center;">Book Time</th>
+                <th style="text-align:center;">Car Type</th>
+                <th style="text-align:center;">Paid Amount</th>
+                <th style="text-align:center;">Book Status</th>
+	</tr>
+	</thead>
+           
+
+	<tbody>
+ 
+
+	<tr ng-repeat="x in dbValue" >
+
+		<td>{{x.pickup}}</td>
+		<td>{{x.destination}}</td>
+		<td>{{x.booktime}}</td>
+                <td>{{x.picktype}}</td>
+                <td>{{x.paidamount}}</td>
+                <td>{{x.bookstatus}}</td>
+
+
+	</tr>
+
+	</tbody>
+
+</table> -->
+      
+ 
+        
+    </ion-content>
+</div>

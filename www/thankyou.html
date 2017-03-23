@@ -1,0 +1,26 @@
+<div ng-controller="Thanks" class="ionic primary-bg-color">
+	<div class="bar bar-header bar-balanced header-primary-bg-color" style="background-color:#5773c0 !important">
+        <button class="button icon-left ion-home" ui-sref="employer-main" style="background-color:#5773c0; border-color: transparent;color:white;"></button>
+        <h1 class="title">Thank you</h1>
+    </div><br><br>
+    <div class="list card">
+        <div style="text-align: center;">
+            <a href="#" class="item">
+                <h2>Successful Transaction</h2>
+                <p>{{Tid}}</p>
+                <h2>You can start a new job now!</h2>
+            </a>
+        </div> 
+        
+        <a href="#" class="item">
+            <div style="text-align: center;position:relative">
+                <h4 style="margin-left: -190px;margin-top: -15px;"><i class="icon ion-ios-star" style="font-size:35px; color:#5773c0"></i> <span style="top: 15px;position: absolute;">Available Job Posting Credits&nbsp;&nbsp;<span>:</span><span>&nbsp;&nbsp;<span id="cr"></span></span></span></h4>
+            </div>
+        </a>
+        <div style="text-align: center;">
+            <div class="item" style="border-top: 1px solid #5703c0;">
+                <a class="button icon-right ion-chevron-right" style="color:#fff; background-color:#5773c0" ui-sref="employer-postjob">Post Job Now</a>
+            </div>
+        </div>
+    </div>
+</div>

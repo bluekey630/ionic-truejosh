@@ -1,0 +1,19 @@
+<?php
+	
+header("Access-Control-Allow-Origin: *");
+
+
+	$userid = $_POST['userid'];
+        $pkgfare = $_POST['pkgfare'];
+        print $userid;
+        print $pkgfare;
+	
+//$con = mysqli_connect("localhost","root","","gocar");
+//	//$res= mysqli_query($con,"SELECT id,name, pickup, destination,booktime,phoneno FROM trip where bookstatus='DA' and acceptedby='$userid'");
+//        $res= mysqli_query($con,"select id,name,carnumber,mobilenumber from driverdetails where id=(select acceptedby from trip where id=$userid and bookstatus='DA')");
+//	$result = array();
+//	while($row=mysqli_fetch_assoc($res)){
+//		$result[] = $row;
+//	}	
+//	echo json_encode($result);
+?>

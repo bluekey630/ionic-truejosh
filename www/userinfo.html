@@ -1,0 +1,87 @@
+<div ng-controller="UserInfoCtrl" ng-init="toggleGroup(1)" style="background-color:#5773c0">
+            <div class="bar bar-header bar-balanced" style="background-color:#5773c0; ">
+                <div>
+                <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="background-color:#5773c0; border-color: transparent;color:white;"></button>
+                <h1 class="title" style="color:white;" >Edit Profile</h1>
+                </div>
+               <!--  <img src="img/displaycar.png" style="margin-top:100px; margin-left:100px; height:60px; width:60px;"></img> -->
+                
+            </div >
+			<ion-content style="margin-top:44px;" style="background-color:#5773c0">
+			<center><label class="item item-input item-floating-label" style="background-color:#5773c0;padding:15px;" >
+			<img src="img/logo3.png" style="height:60px; width:60px;"></img>
+			</label></center>
+			<ion-item style="background-color:#5773c0" >
+			
+			<div class="list" ng-repeat="x in dbValue" style="background-color:#5773c0" >
+			
+			 <label class="item item-input item-floating-label">
+                       <div style="position: absolute; bottom: 8px;right:15px">
+                            <img border="1" class="" src="img/icon/account.svg" alt="" style="width: 28px;" >
+                        </div>
+                        <div style="margin-left:10px;">
+                            <span class="input-label" style="color:white">Full Name</span>
+                            <input type="text"  style="color:white" id="lastname" ng-model="fullname" ng-value=x.username placeholder="Enter FullName">
+                        </div>    
+                    </label>	
+						 <label class="item item-input item-floating-label">
+                       <div style="position: absolute; bottom: 8px;right:15px">
+                            <li class="ion-android-call" data-pack="default" data-tags="padlock, security" style="list-style-type: none; font-size: 25px; color:black;"></li>
+                        </div>
+                        <div style="margin-left:10px;">
+                            <span class="input-label" style="color:white">Phone Number</span>
+                            <input type="text"  style="color:white" id="" ng-model="phoneno"  placeholder="+65 &nbsp;  Contact">
+                        </div>    
+                    </label>
+						 <label class="item item-input item-floating-label">
+                       <div style="position: absolute; bottom: 8px;right:15px">
+                            <li class="ion-email" data-pack="default" data-tags="snail, mail, inbox" style="list-style-type: none; font-size: 25px; color:black;"></li>
+                        </div>
+                        <div style="margin-left:10px;">
+                            <span class="input-label" style="color:white">Email</span>
+                            <input type="text" id="" style="color:white" ng-model="email"  placeholder="Enter Email">
+                        </div>    
+                    </label>
+			
+			<button class="button button-block button-positive" ng-click="go(fullname,phoneno,email)" style="margin: 40px auto 10px; border-radius: 33px; width: 10px; background-color: #eb2135 !important; border-color:darkred !important; min-width: 55px; min-height: 55px;padding: 0;" ng-disaabled="myBtn">
+              Go
+        </button>
+		</div>
+			</ion-item>
+			</ion-content>
+             <!-- <ion-content>
+			 <div class="list" >
+            <ion-item><br><br><br><br><br><br><br><br><br><br><br>
+                 <label class="item item-input item-floating-label">
+            <div style="position: absolute; bottom: 8px;">
+                <img src="img/creditcardback.png" style="height:30px;width:30px;padding-top:5px;">
+
+            </div>
+            <div style="margin-left:32px;">
+                <span class="input-label">CVV</span>
+                <input type="text" placeholder="CVV" ng-model="cvv" style="padding-left:5px;">
+            </div>
+        </label>
+            
+            <div id="first">
+                
+                    <input id="fname" placeholder="             Full Name" type="text" size="23"><br>
+                        
+                    <input id="contact" placeholder="+65 &nbsp;  Contact" type="text" size="23"><br>
+                            
+                    <input id="email" placeholder="            Email" type="text" size="23"><br>
+                                
+                   <p>   Your e-receipts will be sent to this email </p><br>
+                   
+                   <button class="button button-full button-positive" ng-click="saveDetails()" style="width:200px;background-color: #eb2135;border-color: green;">
+                  Submit
+                </button>
+                        
+            </div>
+
+
+</ion-item>
+
+</div>
+</ion-content> -->
+</div>

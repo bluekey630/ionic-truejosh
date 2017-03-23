@@ -1,0 +1,22 @@
+<md-dialog aria-label="Mango (Fruit)">
+  <form>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Edit</h2>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <div>
+        <md-button class="md-primary" ng-click="hide();" onclick="getPhoto();">Image</md-button> | <md-button class="md-primary" onClick="captureVideo(false, true, 30)" ng-click="hide();">Video</md-button>
+    </div>
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <span flex></span>
+    <md-button ng-click="answer('not useful')" class="md-primary">
+     Close
+    </md-button>
+    
+  </div>
+  </form>
+</md-dialog>

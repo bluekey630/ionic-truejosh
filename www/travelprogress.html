@@ -1,0 +1,97 @@
+<div  ng-controller="travelprogressCtrl" class="ionic primary-bg-color">
+    <div>
+            
+            <ion-header-bar style="background-color: #5773c0;">
+			<button class="button icon-left ion-android-arrow-back" ui-sref="availabletrips" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white">Travel Progress</h1>
+    </ion-header-bar>
+        </div>
+    <ion-content >
+<!--    <div class="list">-->
+   
+       
+      
+        <div class="item " class="list" ng-repeat="x in dbValue" style="background-color:#aaa;" ><br/>
+                       
+           <!--  <a class="item " href="#" target="_self"  > -->
+              
+              <!-- <h2>CustomerID: {{x.id}}</h2> -->
+			   
+			   <input type="hidden" value={{x.pickup}} id="pickup" >
+		<a class="item " style="overflow: hidden; text-overflow: ellipsis; white-space: normal; text-justify: distribute;" href="#" onclick="window.open('geo://?q='+document.getElementById('pickup').value, '_system');" data-rel="external"><b>Pick Up :</b><br/><br/>{{x.pickup}}</a>
+		
+			 <input type="hidden" value={{x.destination}} id="destination" >
+		<a class="item " style="overflow: hidden; text-overflow: ellipsis; white-space: normal; text-justify: distribute;" href="#" onclick="window.open('geo://?q='+document.getElementById('destination').value, '_system');" data-rel="external"><b>Destination :</b> <br/><br/>{{x.destination}}</a><br/>
+		
+		</div>
+		<div class="item " class="list" ng-repeat="x in dbValue" >
+			  <p style="font-size:15px;font-family:helvetica,sans-serif;color:black;"  >Name<span style="margin-left:68px;"">:</span>&nbsp;&nbsp;{{x.name}}</p>
+             <!--  <p>Pickup: {{x.pickup}}</p>
+              <p>Destination: {{x.destination}}</p> -->
+             <!--  <p>BookTime: {{x.booktime}}</p> -->
+			 <input type="hidden" value="tel:+65-{{x.phoneno}}" id="mobilenutemp" >
+              <p style="font-size:15px;font-family:helvetica,sans-serif;color:black;" >Phone Number<span style="margin-left:7px;"">:</span>&nbsp;&nbsp; <a  style="text-decoration:none;" href="#" onclick="window.open(document.getElementById('mobilenutemp').value,'_system','location=yes')" >+65 {{x.phoneno}}</a></p>
+			  
+			  <!-- <p>No. of Passenger: {{x.noofpass}}</p> -->
+              <p style="font-size:15px;font-family:helvetica,sans-serif;color:black;" >Package Fare<span style="margin-left:16px;"">:</span> &nbsp;&nbsp;<b>${{x.packagefare}}</b></p>
+             <!--  <p>AcceptedTime: {{x.acceptedtime}}</p> -->
+             <!--  <p>Payment Method: {{x.pymtmethod}}</p>
+			  <p>Package Type: {{x.pkgdesc}}</p> -->
+			  <!-- <p>sdfdsfdsf {{x.pkgdesc}}</p> -->
+		    <div width="80%" class="list list-inset" style="margin-left:1px;;">
+
+                        <button class="button button-full button-positive"  ng-click="arrived(x.id)" ng-disabled="myBtnArrived" style="background-color: #eb2135;border-color: green;border-color: green;color:black;">
+                  Arrived
+                </button>
+            </div>
+			  <!--  <button class="button button-outline button-positive" style="top:10px;border-color: green;color:black;background-color: #eb2135;width:100px;" ng-click="arrived(x.id)" ng-disabled="myBtnArrived">
+              Arrived
+              </button> -->
+			  <div width="80%" class="list list-inset" style="margin-left:1px;;">
+               <button class="button button-full button-positive" style="background-color: #eb2135;border-color: green;border-color: green;color:black;" ng-click="start(x.id,x.pymtmethod)" ng-disabled="myBtnStart">
+              Start
+              </button><br/>
+			 <label class="item item-input" style="border:1px solid black;">
+                     <input type="text" ng-model="extrafare" id="extrafare" placeholder="Extra Fare" >
+                </label><br/>
+              <button class="button button-full button-positive" style="background-color: #eb2135;border-color: green;border-color: green;color:black;" ng-click="gettotalfare(x.id,x.packagefare,x.acceptedtime,x.packagetype)" ng-disabled="myBtntotalfare">
+              Total Fare
+              </button>
+			  </div>
+              <div style="font-size:15px;font-family:helvetica,sans-serif;color:black;" >Package Fare : <input type ="text" ng-model="pkgfare" placeholder="PackageFare" id="ridefare" DISABLED style="background-color:transparent;" /></div>
+              <div style="font-size:15px;font-family:helvetica,sans-serif;color:black;">Mid-Night Fare : <input type ="text" ng-model="midnight" placeholder="MidnightFare" id="midnightfare" DISABLED style="background-color:transparent;" /></div>
+              <div><input type ="hidden" ng-model="totalhour" placeholder="Total Hour" DISABLED style="background-color:transparent;" /></div>                        
+              
+              <div style="font-size:15px;font-family:helvetica,sans-serif;color:black;">Total Fare :<input type ="text" id="amount" ng-model="totalfare" placeholder="TotalFare" DISABLED style="background-color:transparent;" /></div>
+			  <div style="font-size:15px;font-family:helvetica,sans-serif;color:black;">Customer ID :<input type ="text" ng-model="passid" id="passid" placeholder="CustomerID" DISABLED style="background-color:transparent;" /></div>
+              <div style="font-size:15px;font-family:helvetica,sans-serif;color:black;">Driver ID :<input type ="text" ng-model="driverid" id="driverid" placeholder="DriverID" DISABLED style="background-color:transparent;"/></div>
+       
+              <button class="button button-outline button-positive" style="border-color: green;color:black;background-color: #eb2135" ng-click="dropoff(x.id,x.recid,midnight,pkgfare,extrafare,x.pkgdesc)" ng-disabled="myBtnCash">
+              Cash Drop-off
+              </button>
+    
+              <!-- <div> -->
+                  
+                  <input type="submit" class="button button-outline button-positive" style="border-color: green;color:black;background-color: #eb2135" name="submit" value="Card Drop-off"  ng-disabled="myBtnCard" onclick="window.open('http://www.primefield.co/gocarasia/single_transactions.php?amt=' + document.getElementById('amount').value + '&amp;passid=' + document.getElementById('passid').value + '&amp;driverid=' + document.getElementById('driverid').value + '&amp;midnightfare=' + document.getElementById('midnightfare').value + '&amp;extrafare=' + document.getElementById('extrafare').value + '&amp;ridefare=' + document.getElementById('ridefare').value, '_blank');this.disabled=true;"/></div><br/>
+              
+              <!-- <button class="button button-outline button-positive" style="border-color: green;color:black;background-color: darkseagreen" ng-click="reject(x.id)" ng-disaabled="myBtn">
+              Reject
+              </button> -->
+                             
+           <!--  </a> -->
+<!--<input type="submit" name="submit" value="submit" onclick="window.open('http://localhost/GoCar1/www/single_transactions.php?amt=' + document.getElementById('amount').value, '_system');"/>-->
+<!--            <div >
+            <a class="item item-thumbnail-left" href="#" target="_self"  ng-repeat="y in h1">
+              
+              <h2>CustomerID {{y.hour}}</h2>
+              <span id="hour"> {{y.hour}}</span>
+              
+            </a>
+            </div>-->
+			</div> 
+           
+        
+		
+    <!-- </div> -->
+    </ion-content>
+</div>

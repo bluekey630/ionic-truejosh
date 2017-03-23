@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<!--    <meta http-equiv="refresh" content="2" />-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+	 <link href="lib/ionic/css/ion-place-autocomplete.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jobsearch.css">
+    <link rel="stylesheet" href="css/ion-autocomplete.min.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+ <script src="lib/ionic/js/ion-place-autocomplete.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+       <script src="js/ngcordova.min.js"></script>
+    <script src="js/cdv-plugin-paypal-mobile-sdk.js"></script>
+    <script src="js/paypal-mobile-js-helper.js"></script>
+	
+
+    <!-- your app's js -->
+    <script type="js/services.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/employerscript.js"></script>
+    <script src="js/company.js"></script>
+    <script src="js/applyvideo.js"></script>
+    <script src="js/paypal.js"></script>
+    <script src="js/datetimepicker.js"></script>
+    <script src="js/datetimepicker_css.js"></script>
+    <script src="js/angular.country-select.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places,geometry&sensor=true"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	
+	
+<!--   <script>
+ function autoRefresh_div()
+ {
+      $("#loaddiv").load("availabletrips.html");// a function which will load data from other file after x seconds
+  }
+
+  setInterval('autoRefresh_div()', 5000); // refresh div after 5 secs
+            </script>-->
+<!--<script type="text/javascript">
+$(document).ready(function(){
+
+//Check if the current URL contains '#' 
+if(document.URL.indexOf("#")===-1)
+{
+// Set the URL to whatever it was plus "#".
+url = document.URL+"#";
+location = "#";
+
+//Reload the page
+location.reload(true);
+
+}
+});
+</script> -->
+<!--<script type="text/javascript">
+if(location.search.indexOf('r') < 0){
+    var hash = window.location.hash;
+    var loc = window.location.href.replace(hash, '');
+    loc += (loc.indexOf('?') < 0? '?' : '&') + 'r';
+    setTimeout(function(){window.location.href = loc + hash;}, 2000);
+}
+</script>-->
+
+
+<script>
+         $(function() {
+            $( "#datepicker-13" ).datepicker();
+            $( "#datepicker-13" ).datepicker("show");
+         });
+      </script>
+  </head>
+  <body ng-app="starter" class="platform-android">
+      <ion-nav-view></ion-nav-view>
+	  
+  </body>
+</html>

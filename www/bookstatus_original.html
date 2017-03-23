@@ -1,0 +1,44 @@
+<!-- <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+<div id="signin" ng-controller="bookstatusCtrl">  
+    <img id="main-banner-image" src="img/icon/GoCar-Logo4.png" />
+    
+    <ion-content style="padding-top: 44px;">
+    <div class="signin-box" style="width: 90%; margin: 69px auto 0; background-color: rgba(255, 255, 255, 0.9) !important; color: #777; text-align: center; padding: 25px; position: relative;height:100%;" >
+        <div class="card" style="text-align: center; background-color: transparent; box-shadow: inherit;margin: -20px -17px;">
+            <header>     <button class="button icon-left ion-log-out" ui-sref="signout" style="background-color: transparent; border-color: transparent;text-align: right;"> Log Off</button></header>
+            <p style="font-size:18px">Your Booking Confirmed!</p>
+            <strong><center>Searching Drivers for You...</center></strong>
+            
+            
+        </div>
+        <br><br><br>
+        <div clas="list" style="height:100%;">
+            <a class="item item-thumbnail-left" href="#" target="_self" >
+                <img src="img/perry.png">
+                 <h2>perry John</h2>
+                 <h2>6 mins</h2>
+                 
+            </a>
+              <a class="item item-thumbnail-left" href="#" target="_self" >
+            <img src="img/ben.png" />
+             <h2>Ben cheow</h2>
+             <h2>3 mins</h2> 
+            </a>
+            <button class="button button-outline button-positive" style="border-color: green;color:black;background-color: darkseagreen" ng-click="getdriver()" ng-disaabled="myBtn">
+            Click Here to get Your Driver
+           </button>
+            <div class="list" >
+            <a class="item item-thumbnail-left" href="#" target="_self"  ng-repeat="x in dbValue">
+              
+              <h2>CustomerID {{x.id}}</h2>
+			  <p>Name: {{x.name}}</p>
+              <p>Car Number {{x.carnumber}}</p>
+              <p>Mobile Number {{x.mobilenumber}}</p>
+              
+            </a>
+        </div>   
+        </div> 
+           
+        
+    </ion-content>
+</div>

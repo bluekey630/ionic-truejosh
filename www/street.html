@@ -1,0 +1,22 @@
+<div ng-controller="MyCtrl">
+<ion-header-bar class="bar-stable">
+      <h1 class="title">Ionic Blank Starter</h1>
+    </ion-header-bar>
+    <ion-content>
+	<div>
+      <ion-google-place placeholder="Your address" ng-model="data.address" required name="address" location-changed="locationChanged"/>
+	  </div>
+	  <div>
+	  <ion-google-place placeholder="Your address2" ng-model="data.address2" required name="address2" location-changed="locationChanged"/>
+	  </div>
+	  <div>
+		<input type="hidden"   id="pickupfrom1" ng-model="pickupfrom1" />
+		<input type="hidden"  id="dropto1" ng-model="dropto1" />
+	</div>
+	 <div>
+		<input type="hidden"  name="pickupfrom" id="pickupfrom" ng-value="pickupfrom1 />
+		<input type="hidden"  name="dropto" id="dropto" ng-value="dropto1" />
+	</div>
+    </ion-content>
+	
+</div>

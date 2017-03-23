@@ -1,0 +1,703 @@
+#help-detail-contents h4{
+	font-size:14pt;
+	font-style:normal;
+	font-weight:normal;
+	margin-top:15px;
+	margin-bottom:10px;
+}
+#help-detail-contents h5 {
+	font-size: 130%;
+	padding-top: 10px;
+}
+
+ul#steps {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:10px 0;
+}
+
+li.steps {
+	background-position:left top;
+	background-repeat:no-repeat;
+	display:block;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	min-height:32px;
+	padding-left:30px;
+}
+
+li#numbered-1.steps {
+	background-image:url(images/No1.jpg);
+}
+
+li#numbered-2.steps {
+	background-image:url(images/No2.jpg);
+}
+
+li#numbered-3.steps {
+	background-image:url(images/No3.jpg);
+}
+
+li#numbered-4.steps {
+	background-image:url(images/No4.jpg);
+}
+li#numbered-5.steps {
+	background-image:url(images/No5.jpg);
+}
+li#numbered-6.steps {
+	background-image:url(images/No6.jpg);
+}
+
+li#numbered-7.steps {
+	background-image:url(images/No7.jpg);
+}
+li#numbered-8.steps {
+	background-image:url(images/No8.jpg);
+}
+
+
+
+li#star.steps {
+	background-image:url(images/BulletTemplate.png);
+}
+
+.help-list-image {
+	padding-left: 50px;
+	padding-bottom: 20px;
+}
+.redX {
+	color: #F00;
+}
+
+
+
+#help-bottom 
+{
+	width:990px;
+	float: left;
+    margin: 15px auto 0;
+}
+
+#help-bottom #col_1,
+#help-bottom #col_2,
+#help-bottom #col_3{
+	width:328px;
+	float:left;
+}
+
+#help-bottom #col_1,
+#help-bottom #col_3{
+	background-color:#f1f6f9;
+}
+
+#help-bottom h3{
+	font-size: 1.35em;
+    font-weight: bold;	
+    margin:25px 0 15px 30px;
+}
+
+#help-bottom .col-inner{
+	margin: 0 auto;    
+	width: 250px;
+}
+
+#help-bottom h4{
+	font-size:1.2em;
+	font-weight:bold;
+	margin-bottom: 15px;
+}
+
+#help-bottom li{
+	line-height: 1.4em;
+    margin: 0 0 6px 15px;
+    list-style:none;
+}
+
+#help-bottom a{
+	font-weight:normal;
+}
+
+#help-bottom #col_3 li{
+	list-style:none;
+}
+
+
+/*----help inner page----*/
+
+.help_sub_pages #header-background h1{
+	margin-left: -235px;
+}
+
+.help_sub_pages #center{
+	width: 75% !important;
+	float: left;
+}
+
+.help_sub_pages #help-detail-contents h3{
+	margin-top:0;
+}
+
+/*
+.help_sub_pages #container{
+	background:url('images/help-inner-left.png') repeat-y 0 0;
+}*/
+
+
+#help-left {
+    float: left;
+    width: 215px;
+    margin-right: 20px;
+    margin-top: 88px;
+}
+
+#node-65{
+	float: left;
+    width: 700px;
+}
+
+
+#block-block-16 h2{
+	display:none;
+}
+
+#help-left ul{
+	margin-top:15px;
+	margin-left: 2px;
+}
+
+#help-left h2{
+	display:none;
+}
+
+#help-left ul li.menu-mlid-7146,
+#help-left ul li.menu-mlid-8917{
+	color: #0054A5;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-top: 40px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#help-left ul li.menu-mlid-7146 a,
+#help-left ul li.menu-mlid-8917 a{
+	color:#0054A5;
+	}
+
+#help-left ul li{
+	margin-top:0px;
+	margin-bottom: 3px;
+}
+
+#help-left ul li.expanded{
+	margin-bottom:0px;
+	margin-top: 0px;
+	margin-left: 0;
+	background: url("images/menu-expanded.gif") no-repeat scroll 1px 0.35em;
+}
+
+#help-left ul li a{
+	font-weight:normal;
+    text-decoration: none;
+}
+
+#help-left ul li ul{
+	margin-bottom: 10px;
+	margin-left: 0;
+	margin-top: 7px;
+	padding-left: 0;
+}
+
+#help-left ul li a{
+	margin-bottom:5px;
+	font-size:1.2em;
+	background-position: 0 0.3em;
+}
+
+#help-left ul li ul li{
+   	margin-right: 0;
+   	margin-left: 0;
+   	background: url("images/menu-leaf.gif") no-repeat scroll 1px 0.3em;
+}
+
+#help-left ul li ul li a{
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.1em;
+    margin-bottom: 0;
+}
+
+
+#help-left ul li ul li ul li{
+	margin-top:0px;
+	background:url("images/menu-leaf.gif") no-repeat scroll 1px 0.3em;
+}
+
+#help-left ul li ul li ul li a{
+	font-size: 1.05em;
+}
+
+#help-left ul li ul li ul li ul li a{
+	font-size: 1em;
+}
+
+li a.active {
+    color: #0054A5;
+}
+
+li.expanded .active-trail.active {
+    color: #0054A5;
+}
+
+/*-----menu-------*/
+
+.menu_list {	
+	width: 150px;
+}
+.menu_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	margin:1px;
+    font-weight:bold;
+    background: #eef4d3 url(left.png) center right no-repeat;
+}
+.menu_body {
+	display:none;
+}
+.menu_body a{
+  display:block;
+  color:#006699;
+  background-color:#EFEFEF;
+  padding-left:10px;
+  font-weight:bold;
+  text-decoration:none;
+}
+.menu_body a:hover{
+  color: #000000;
+  text-decoration:underline;
+  }
+  
+
+/*---help confluence page----*/
+#help-bottom #confluence_col_1, 
+#help-bottom #confluence_col_2,
+#help-bottom .confluence_purch{
+	float: left;
+    width: 450px;
+}
+
+#help-bottom #confluence_col_1 .col-inner,
+#help-bottom #confluence_col_2 .col-inner{
+	margin: 0 auto;
+    width: 430px;
+}
+
+#help-bottom #confluence_col_1 h3,
+#help-bottom #confluence_col_2 h3{
+	font-size:1em;
+	margin:15px 0 15px 12px;
+}
+
+#help-bottom #confluence_col_1 h3 a,
+#help-bottom #confluence_col_2 h3 a{
+	font-weight:bold;
+}
+
+#help-bottom #confluence_col_1 h2,
+#help-bottom #confluence_col_2 h2,
+#help-bottom .confluence_purch h2{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom:30px;
+    color: #0054A5;
+}
+
+#help-bottom #confluence_col_1 li,
+#help-bottom #confluence_col_2 li {
+    line-height: 1.25em;
+}
+
+#confluence-install-help img {
+    border: 1px solid #82ADDA;
+    box-shadow: 0 0 5px #999999;
+    margin: 0 0 30px;
+    padding: 10px;
+}
+
+
+/*---help more---*/
+
+.help_sub_pages #help-more-text {
+	background: none repeat scroll 0 0 #F1F6F9;
+    margin: 20px 0;
+    padding: 20px;
+    float:left;
+    width:100%;
+}
+
+
+.help_sub_pages #help-more-text h2{
+	font-size: 1.7em;
+	padding-bottom: 10px;
+}
+
+#help-left ul li.collapsed{
+	margin-left: 0;
+}
+
+
+
+
+/*---diagrams-anywhere page css-----*/
+
+.diagrams-anywhere #main-content {
+	display: block;
+	padding: 10px;
+}
+.diagrams-anywhere #questions {
+	display: block;
+	width: 370px;
+	float: left;
+}
+.diagrams-anywhere .questions{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	text-decoration: none;
+}
+.diagrams-anywhere .questions a:hover {
+	color: #333;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 8px 0;
+	text-decoration: none;
+	text-decoration: none;
+}
+.diagrams-anywhere .questions a:visited {
+	color: #333;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 8px 0;
+	text-decoration: none;
+	text-decoration: none;
+}
+.diagrams-anywhere .sublink {
+	background: url(images/diagram-anywhere/arrow_state_grey_right.png) no-repeat;
+	width: 16px;
+	height: 30px;
+	float: left;
+	padding-right: 5px;
+}
+.diagrams-anywhere #desktop-links {
+	background: url(images/diagram-anywhere/faq-box.png) no-repeat;
+	width:243px;
+	height:232px;
+	float: left;
+
+	}
+.diagrams-anywhere .row {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+	height: 400px;
+}
+.diagrams-anywhere .row1 {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+}
+.diagrams-anywhere .top {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #7a980d;
+	text-decoration: none;
+	font-weight: bold;
+}
+.diagrams-anywhere .desktop-btn {
+	background: url(images/diagram-anywhere/createlyicon.png) no-repeat;
+	width: 215px;
+	height: 115px;
+}
+.diagrams-anywhere #main-content h1 {
+	color: #0060AF;
+	font-family: georgia;
+	font-size: 24px;
+}
+.diagrams-anywhere #main-content p {
+	color: #333333;
+	font-family: verdana;
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: justify;
+}
+.diagrams-anywhere .line {
+	width: 960px;
+	border-top: 1px solid #999999;
+	display: block;
+}
+.diagrams-anywhere #main-content h4 {
+	color: #0060AF;
+	font-family: georgia;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+.diagrams-anywhere .icon {
+	background: url('images/diagram-anywhere/go-jump.png') no-repeat;
+	width: 24px;
+	height: 24px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.diagrams-anywhere #icons ol {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	font-size: 18px;
+	color: #0066FF;
+}
+.diagrams-anywhere#icons li {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	font-size: 18px;
+	color: #0066FF;
+}
+.diagrams-anywhere .green-links {
+	color: #7a980d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.diagrams-anywhere .green-links a:hover {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.diagrams-anywhere .diagrams {
+	margin: 10px 10px;
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 5px #999;
+}
+
+
+.diagrams-anywhere .center-words{
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	color:#333333;
+	display:block;
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.diagrams-anywhere .get-it-now{
+	border:0px;
+	position:relative;
+	left:10px;
+	top:10px;
+	}
+
+.diagrams-anywhere .faq-link{
+	border:0px;
+	position:relative;
+	left:10px;	
+}
+
+.diagrams-anywhere .diagrams-anywhere-link{
+	border:0px;
+	position:relative;
+	left:10px;
+}
+
+
+.diagrams-anywhere .become-a-reseller{
+	border:0px;
+	position:relative;
+	left:10px;
+}
+
+.diagrams-anywhere a:focus { 
+    outline: none; 
+}
+
+
+/*----Desktop Installation-----*/
+
+.desktop-installation #main-content {
+	display: block;
+	padding: 10px;
+	
+}
+
+.desktop-installation #main-content-sec{display:block;
+padding:20px; 10px;}
+
+#main-content h1 {
+color:#0060AF;
+font-family:verdana;
+font-size:30px;
+}
+.desktop-installation .sublink {
+	background: url(images/install-desktop/arrow_state_grey_right.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	padding-right: 5px;
+	margin-top:5px;
+}
+.desktop-installation .row {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+	height: 270px;
+	width:100%;
+}
+.desktop-installation .row1 {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+}
+.desktop-installation .main-content{
+	color: #0060AF;
+	font-family: verdana;
+	font-size: 34px;
+	margin-bottom:10px;
+}
+
+.desktop-installation .main-contents-sub-links {
+	color:#1056BE;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	text-decoration:none;
+
+}
+
+
+.desktop-installation .main-contents-sub {
+	color: #7f9e32;
+	font-family: verdana;
+	font-size: 20px;
+
+}
+
+.desktop-installation .sub-para{
+	color: #333333;
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: justify;
+
+}
+
+.desktop-installation #main-content p {
+	color: #333333;
+	font-family: verdana;
+	font-size: 14px;
+	line-height: 1.5;
+	text-align: justify;
+}
+.desktop-installation .line {
+	width: 100%;
+	border-top: 1px solid #999999;
+	display: block;
+	margin:0;
+	padding:0;
+	margin-bottom:10px;
+}
+.desktop-installation #main-content h4 {
+	color: #0060AF;
+	font-family: verdana;
+	font-size: 16px;
+	font-weight: bold;
+}
+.desktop-installation #icons ol {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	font-size: 18px;
+	color: #0066FF;
+}
+.desktop-installation #icons li {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #333;
+	font-size: 18px;
+	color: #0066FF;
+}
+.desktop-installation .diagrams {
+	margin: 10px 10px;
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 5px #999;
+}
+
+.desktop-installation .sub-list{
+	display:block;
+	width:800px;
+	margin-left:60px;
+}
+
+
+.desktop-installation #left-col{
+	float: left;
+	height: 300px;
+	margin-right: 75px;
+	width: 400px;
+}
+
+.desktop-installation #right-col{
+	width:243px;
+	float:left;
+	height:300px;
+}
+
+.desktop-installation .links-box {
+	background: url(images/install-desktop/faq-box.png) no-repeat;
+	width: 243px;
+	height: 232px;
+	float: left;
+	padding-right: 5px;
+}
+
+.desktop-installation .get-it-now{
+	border:0px;
+	position:relative;
+	left:10px;
+	top:10px;
+	}
+
+.desktop-installation .faq-link{
+	border:0px;
+	position:relative;
+	left:10px;
+	top:10px;
+}
+
+.desktop-installation .diagrams-anywhere-link{
+	border:0px;
+	position:relative;
+	left:10px;
+	top:10px;
+}
+
+.desktop-installation .become-a-reseller{
+	border:0px;
+	position:relative;
+	left:10px;
+	top:10px;
+}
+
+.desktop-installation a:focus { 
+    outline: none; 
+}
+
+
+

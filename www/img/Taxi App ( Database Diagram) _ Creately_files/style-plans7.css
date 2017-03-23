@@ -1,0 +1,752 @@
+ @charset "utf-8";
+/* CSS Document */
+
+/*body{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(../images/body_bg.gif) left top repeat-x #d0dcea;
+}
+.wrapper{
+	margin:auto;
+	width:984px;
+	height:auto;
+}
+.main{
+	float:left;
+	width:984px;
+	height:auto;
+}
+*/
+.txt-orng{
+	color:#f7941d;
+}
+
+
+.node{
+	padding-left: -1px !important;
+}
+
+
+
+/*.header{
+	float:left;
+	width:984px;
+	height:83px;
+}
+.body_area{
+	float:left;
+	width:964px;
+	height:auto;
+	margin:10px 0 0 0;
+	background:url(../images/body_top_img.gif) left top no-repeat #FFFFFF;
+	padding:12px 10px 10px 10px;
+}*/
+.plans-pricing_sec{
+	float:left;
+	width:964px;
+	height:auto;
+}
+.plans-pricing_header{
+	float:left;
+	width:939px;
+	height:61px;
+	background:url(/images/plans/plan-price_bg.gif) left top no-repeat;
+	font-size:35px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding:25px 0 0 25px;
+}
+.plans-pricing_content_sec{
+	float:left;
+	width:960px;
+	height:auto;
+	margin:-5px 0 10px -17px;
+}
+.plans-pricing_content_top{
+	float:left;
+	width:960px;
+	height:auto;
+}
+.plans-pricing_content_mid{
+	float:left;
+	width:938px;
+	height:auto;
+	background-color:#ebecef;
+	padding:15px 0 0 22px;
+}
+
+.content_mid_header{
+	float:left;
+	width:938px;
+	height:auto;
+	font-size:23px;
+	color:#3975bf;
+}
+.content_mid_header_button{
+	float:left;
+	width:521px;
+	height:auto;
+	padding:40px 0 80px 0;
+}
+.pay_button_area {
+	width:auto;
+	height:auto;
+	float:left;
+	padding-left:195px;
+}
+.cancel_button_area {
+	width:auto;
+	height:auto;
+	float:left;
+	padding-left:25px;
+}
+.pay_button {
+	width:118px;
+	height:36px;
+	float:left;
+}
+.cancel_button {
+	width:118px;
+	height:36px;
+	float:left;
+}
+.content_mid_header1{
+	float:left;
+	width:938px;
+	height:auto;
+	font-size:17px;
+	color:#32342f;
+	font-family:Tahoma;
+	padding:15px 0 0 0;
+}
+.content_mid_header2{
+	float:left;
+	width:521px;
+	height:auto;
+	font-size:17px;
+	color:#32342f;
+	font-family:Tahoma;
+	padding:30px 0 0 0;
+	text-align:center;
+}
+.content_mid_header2 strong {
+	font-weight:bold;
+}
+.content_mid_header1 strong {
+	font-weight:bold;
+	font-size:18px;
+}
+.content_mid_information_sec{
+	float:left;
+	width:938px;
+	height:auto;
+	margin:30px 0 0 0;
+	padding:0 0 12px 0;
+}
+.content_mid_information_sec_innertxt {
+	width:830px;
+	height:auto;
+	float:left;
+	padding:40px 0 0 100px;
+}
+.sec_innertxt_left {
+	width:150px;
+	height:auto;
+	float:left;
+}
+.sec_innertxt_left_text {
+	width:180px;
+	height:auto;
+	float:left;
+	font-size:14px;
+	font-family:Tahoma;
+	color:#1c1c1b;
+	padding-bottom:15px;
+	font-weight:bold;
+}
+.sec_innertxt_left_text1 {
+	width:650px;
+	height:auto;
+	float:left;
+	font-size:16px;
+	font-family:Tahoma;
+	color:#1c1c1b;
+	padding-bottom:10px;
+	font-weight:bold;
+}
+.sec_innertxt_left_text3 {
+	width:130px;
+	height:auto;
+	float:left;
+	font-size:14px;
+	font-family:Tahoma;
+	color:#1c1c1b;
+	padding-bottom:10px;
+}
+.sec_innertxt_left_text4 {
+	width:650px;
+	height:auto;
+	float:left;
+	font-size:10px;
+	font-family:Tahoma;
+	color:#696d6f;
+	padding-bottom:10px;
+	font-style:italic;
+}
+.sec_innertxt_right {
+	width:650px;
+	height:auto;
+	float:left;
+}
+.content_mid_information_lt{
+	float:left;
+	width:268px;
+	height:auto;
+}
+.information_lt_txt_sec{
+	float:left;
+	width:268px;
+	height:auto;
+}
+.information_lt_txt_header{
+	float:left;
+	width:268px;
+	height:auto;
+	font-size:14px;
+	color:#000000;
+	padding:0 0 6px 0;
+}
+.information_lt_txt_txtbox{
+	float:left;
+	width:268px;
+	height:auto;
+	padding:0 0 8px 0;
+}
+.information_lt_txt_header p{
+	height:17px;
+	margin:0;
+	padding:0px;
+	color:#696d6f;
+	font-size:11px;
+	font-style:italic;
+}
+.input_information{
+	width:214px;
+	height:19px;
+	border:1px solid #7f9db9;
+	background-color:#FFFFFF;
+	padding:3px 3px 0 3px;
+}
+.input_information_2{
+	width:83px;
+	height:19px;
+	border:1px solid #7f9db9;
+	background-color:#FFFFFF;
+	padding:3px 3px 0 3px;
+}
+.input_information_3{
+	width:91px;
+	height:19px;
+	border:1px solid #7f9db9;
+	background-color:#FFFFFF;
+}
+.content_mid_information_rt{
+	float:left;
+	width:300px;
+	height:auto;
+}
+.information_rt_sec{
+	float:left;
+	width:300px;
+	height:auto;
+	margin:40px 0 0 0;
+}
+.information_rt_sec01{
+	float:left;
+	width:300px;
+	height:auto;
+	padding:15px 0 30px 0;
+}
+.information_rt_txt{
+	float:left;
+	width:300px;
+	height:auto;
+	font-size:11px;
+	font-style:italic;
+	font-weight:bold;
+	color:#2f3031;
+	line-height:16px;
+}
+.information_rt_txt p{
+	margin:0;
+	padding:0 2px 0 0;
+	float:left;
+}
+.information_bottom_lt{
+	float:left;
+	width:268px;
+	margin:25px 0 0 0;
+}
+.information_bottom_rt{
+	float:left;
+	width:300px;
+	margin:45px 0 0 0;
+}
+.information_bottom_rt span{
+	margin:0px;
+	padding:0 0 0 15px;
+	font-size:14px;
+	color:#3a3e39;
+	font-weight:bold;
+}
+.information_bottom_rt span a{
+	color:#3a3e39;
+	text-decoration:underline;
+}
+.information_bottom_rt span a:hover{
+	color:#3a3e39;
+	text-decoration:none;
+}
+.plans-pricing_content_bottom{
+	float:left;
+	width:960px;
+	height:auto;
+}
+.plans-pricing_footer{
+	float:left;
+	margin:0 0 25px -17px;
+	width:960px;
+	height:50px;
+	line-height: 50px;
+	background:url(/images/plans/plans-pricing_footer.gif) left top no-repeat;
+	font-size:13px;
+	color:#fff;
+	font-family:Tahoma;
+	text-align: center;
+}
+.plans-pricing_footer a {
+	font-weight:bold;
+	text-decoration:underline;
+	font-size:14px;
+	color:#fff;
+	font-family:Tahoma;
+}
+#public-plans-tip {
+	cursor: help;
+}
+.plans-pricing_footer a:hover {
+	font-weight:bold;
+	text-decoration:none;
+}
+.content_mid_information_footer{
+	float:left;
+	width:930px;
+	height:auto;
+}
+.content_mid_information_chk-txt{
+	float:left;
+	width:930px;
+	height:auto;
+}
+
+
+
+
+/*----isx_plan_pricing------*/
+
+.left_section {
+	width:137px;
+	height:510px;
+	float:left;
+	/* background:url(/images/plans/left_section.jpg) no-repeat; */
+}
+.left_section_text {
+	width:100%;
+	height:auto;
+	float:left;
+	padding-top: 125px;
+}
+.left_navi {
+	width:127px;
+	padding-left:5px;
+	height:auto;
+	float:left;
+}
+.left_navi ul {
+	margin:0;
+	padding:0;
+}
+.left_navi ul li {
+	width:122px;
+	height:15px;
+	float:left;
+	list-style:none;
+	text-decoration:none;
+	background:url(/images/plans/li_bottom_strip.jpg) bottom left no-repeat;
+	padding:5px 0 5px 5px;
+}
+.left_navi ul li a {
+	width:auto;
+	height:auto;
+	float:left;
+	color:#272727;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	list-style:none;
+	text-decoration:none;
+	font-weight:bold;
+	cursor:help;
+}
+.left_navi ul li a:hover {
+	color:#666666;
+	text-decoration:none;
+	list-style:none;
+}
+.left_navi ul li.last {
+	background:none;
+}
+.right_section {
+	width:818px;
+	height:auto;
+	float:right;
+	padding:0px;
+}
+.first_block {
+	width:268px;
+	height:auto;
+	float:left;
+	padding-left:6px;
+	
+}
+
+.first_block.resetpadding{ padding:0px 0px 0px 1px;}
+
+.first_block_top {
+	width:268px;
+	height:63px;
+	float:left;
+	overflow:hidden;
+	background:url(/images/plans/plus_top2.jpg) no-repeat;
+}
+.second_block_top {
+	width:268px;
+	height:63px;
+	float:left;
+	overflow:hidden;
+	background:url(/images/plans/pro_top2.jpg) no-repeat;
+}
+.third_block_top {
+	width:268px;
+	height:63px;
+	float:left;
+	overflow:hidden;
+	background:url(/images/plans/team_top2.jpg) no-repeat;
+}
+.first_block_mid {
+	width:268px;
+	height:auto;
+	height:437px;
+	float:left;
+	background:url(/images/plans/mid_block_section2.jpg) repeat-y;
+}
+.first_block_bottom {
+	width:268px;
+	height:14px;
+	float:left;
+	background:url(/images/plans/bottom_block_section2.jpg) no-repeat;
+}
+.first_block_top_text {
+	width:128px;
+	height:55px;
+	float:left;
+	padding:5px 0 0 140px;
+	font-size:34px;
+	font-family:Tahoma;
+}
+.first_block_top_text h6 {
+	padding:0 0 0 37px;
+	margin:0;
+	font-size:11px;
+	color:#787878;	
+	font-family:Tahoma;
+	font-weight:normal;
+}
+.first_block_inner {
+	width:218px;
+	height:auto;
+	float:left;
+	padding:10px 24px 10px 24px;
+}
+.porsonal_use_top {
+	width:216px;
+	height:7px;
+	float:left;
+	background:url(/images/plans/for_porsnal_use_top.jpg) no-repeat;
+	overflow:hidden;
+}
+.porsonal_use_mid {
+	width:206px;
+	min-height:55px;
+	float:left;
+	background:url(/images/plans/for_porsnal_use_mid.jpg) repeat-y;
+	font-family:Tahoma;
+	font-size:12px;
+	color:#1c1c1c;
+	text-align:center;
+	line-height:15px;
+	padding:0 5px 0 5px;
+}
+
+.porsonal_use_mid.reset_padding{padding:5px 5px 0 5px;}
+
+
+.porsonal_use_mid_navi {
+	width:218px;
+	height:auto;
+	float:left;
+	padding:0 0 0 0;
+}
+.porsonal_use_mid_navi ul {
+	margin:0;
+	padding:0;
+}
+.porsonal_use_mid_navi ul li {
+	width:208px;
+	height:auto;
+	float:left;
+	list-style:none;
+	text-decoration:none;
+	background:url(/images/plans/li_bottom_strip_long2.jpg) bottom no-repeat;
+	padding:4px 0 4px 5px;
+	color:#404145;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+}
+.porsonal_use_mid_navi ul li strong {
+	color:#000;
+	font-weight:bold;
+}
+.porsonal_use_mid_navi ul li span {
+	color:#CC6600;
+	font-weight:bold;
+}
+.porsonal_use_mid_navi ul li.last {
+	background:none;
+}
+.bottom_inner_text_area {
+	width:218px;
+	height:auto;
+	float:left;
+	padding-top: 5px;
+}
+.porsonal_use_bottom {
+	width:216px;
+	height:7px;
+	float:left;
+	background:url(/images/plans/for_porsnal_use_bottom.jpg) no-repeat;
+}
+.sign_up_button {
+	height:36px;
+display: block;
+text-align: center; margin-bottom: 10px
+}
+
+.sign_up_button #current-plan { margin: -9px 0 0 135px; -webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); }
+
+.save_text {
+	font-size:11px;
+	font-weight:bold;
+	color:#787878;	
+	font-family:Tahoma;
+	display: block; 
+	text-align:center;
+}
+.save_text h4 {
+	font-size:16px; font-weight: bold;
+
+	margin:0 10px 0 0;
+	padding:0;
+	color:#000; 
+}
+
+.save_text a {
+	font-weight: normal;	
+}
+
+.team {  position: relative; }
+
+.team .sign_up_button {
+ height:36px;
+ margin-bottom: 10px
+}
+
+.team #starbrust { position: absolute; right: -10px; bottom: 5px; } 
+
+.team .save_text {
+	font-size:11px;
+	font-weight:bold;
+	color:#787878;	
+	font-family:Tahoma;
+	display: block;
+	margin-top: 12px; 
+	text-align:center;
+}
+
+.footer_bottom_text_area {
+	width:960px;
+	height:auto;
+	float:left;
+	margin:5px 0 0 -17px;
+}
+.footer_block_area {
+	width:960px;
+	height:auto;
+	float:left;
+}
+.footer_block_one {
+	width:313px;
+	height:auto;
+	float:left;
+}
+.footer_block_two {
+	width:313px;
+	height:auto;
+	float:left;
+	margin-left:10px;
+}
+.footer_bottom_top_boxs {
+	width:313px;
+	height:9px;
+	float:left;
+	background:url(/images/plans/footer_bottom_top_box_bg.jpg) no-repeat;
+	overflow:hidden;
+}
+.footer_bottom_mid_boxs {
+	width:263px;
+	height:auto;
+	height:121px;
+	min-height:121px;
+	float:left;
+	background:url(/images/plans/footer_bottom_mid_box_bg.jpg) top repeat-x #e3effd;
+	border-left:#c4d5e9 solid 1px;
+	border-right:#c4d5e9 solid 1px;
+	font-family:Tahoma;
+	font-size:12px;
+	color:#5a5a5a;
+	line-height:18px;
+	padding:0 24px 0 24px;
+	margin:0;
+}
+.footer_bottom_mid_boxs h3 {
+	color:#2866b3;
+	font-size:20px;
+	text-align:center;
+	padding:0 0 8px 6px;
+	margin:0;
+	font-family:Tahoma;
+	font-weight:normal;
+}
+
+.footer_bottom_bottom_boxs {
+	width:313px;
+	height:9px;
+	float:left;
+	margin:0;
+	background:url(/images/plans/footer_bottom_bottom_box_bg.jpg) no-repeat;
+}
+.project_sharing {
+	width:960px;
+	height:auto;
+	float:left;
+	padding:8px 0 8px 0;
+	margin-top:18px;
+}
+.project_sharing p{
+	font-size:12px;
+	font-family:Tahoma;
+	color:#5a5a5a;
+	width:930px;
+	height:auto;
+	float:left;
+	margin:0;
+	padding:0 0 0 30px;
+}
+.project_sharing h3 {
+	font-size:14px;
+	font-family:Tahoma;
+	padding:0 0 0 30px;
+	font-weight:bold;
+}
+.project_icon {
+	width:17px;
+	height:19px;
+	float:left;
+	padding:13px 0 0 4px;
+}
+.project_strip {
+	width:960px;
+	height:1px;
+	float:left;
+	background-color:#2964b0;
+}
+
+
+
+/*
+=======================================
+Website		: Creately [www.creately.com]
+Page		: Plans page
+Designer	: Mohamed Aslam Najeebdeen
+Email		: aslam@cinergix.com
+Website		: http://cinergix.com
+Date		: 13.02.2010
+=======================================
+*/
+
+.left_navi .header { background: url("/images/plans/arrow_down.png") no-repeat scroll right center; color: #9d9d9d; margin:0 0 5px 10px; padding-right:20px; text-align:left; }
+
+sup { color: red; }
+
+.third_block_top small { font-size:  20px; margin-right: 4px; }
+.third_block_top sup { font-size: 12px;}
+.third_block_top a { font-weight: normal; }
+
+#plans-table { margin: 0 0 30px; overflow: hidden; }
+#plans-table h4 { background: url(/images/plans/bulk_plans_title.png) no-repeat left center; height:  35px; text-indent: -9999px; margin-bottom: 8px; }
+
+#plans-table table { width: 620px; float: left; border: 1px solid #8f8f8f; }
+#plans-table table tr th { border: 1px solid #8f8f8f; padding: 8px; text-align: left; background: #e0e2e9; }
+#plans-table table tr th img { margin: 0 5px -4px 0; float: none; }
+#plans-table table tr td { border: 1px solid #8f8f8f; padding: 8px; text-align: center; background: #f4f5f9; }
+#plans-table table tr td.notes { background:none repeat scroll 0 0 #FFFFFF; border:1px solid #8F8F8F; padding:10px; text-align:left; font-style:italic; }
+
+#plans-table img { float: right; margin-top: -13px; }
+
+/* FAQ & TESTIMONIAL */
+
+#faq-tesimonial-container { margin: 10px 0; }
+#faq-tesimonial-container h2 { font-family:Tahoma; font-size:18px; font-weight:bold; color: #2866b2; }
+#faq-tesimonial-container h3 { font-family:Tahoma; font-size:14px; font-weight:bold; }
+#faq-tesimonial-container p { color:#5A5A5A; font-family:Tahoma; font-size:12px;  margin-bottom:30px; }
+
+#faq-tesimonial-container #faq { height: 500px; width: 595px; float: left; background: #e6f0fc; padding: 20px; border: 1px solid #c3d4e8; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; }
+
+#faq-tesimonial-container #testimonials { height: 500px; width: 270px; padding: 20px;float: left; margin-left: 10px; background: #e6f0fc; border: 1px solid #c3d4e8; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px;  }
+#faq-tesimonial-container #testimonials img { display:block; margin:10px auto; width:177px; }
+#faq-tesimonial-container #testimonials ul { margin: 0; list-style: none; padding: 0;}
+#faq-tesimonial-container #testimonials ul li { margin: 0 0 15px; list-style: none; display: block; padding: 0; background: none; overflow: hidden; }
+#faq-tesimonial-container #testimonials blockquote { background: url(/images/plans/blockquote.png) no-repeat top left; margin: 0; padding-left: 45px; margin: 0;}
+#faq-tesimonial-container #testimonials small { margin-top: 12px; padding-left: 45px; float: right; font-size: 12px; font-style: italic; display: block; }
+
+.current-plan-heighlight { opacity: 0.5; }
+
+/* Team plan upgrade hack */
+.team-upgrade { position: relative; margin: 0 -20px; width: 125px;  }
+.team-upgrade .sign_up_button  { margin: 20px 0 0 15px; }
+.team-upgrade #current-plan { position: absolute; left: 20px; top: 8px;} 
+
+
+

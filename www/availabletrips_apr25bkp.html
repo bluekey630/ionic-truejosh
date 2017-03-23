@@ -1,0 +1,185 @@
+
+<div ng-controller="availabletripsCtrl" class="ionic primary-bg-color">
+  <ion-side-menus>
+                <ion-side-menu-content >
+<div>      
+            <ion-header-bar class="bar-positive" class="bar header" style="background-color: #eb2135;">
+			 <div class = "buttons">
+                    <button style="color:black;" class="button icon button-clear ion-navicon-round" ng-click="toggleLeft()"></button>
+                </div>
+      <h1 class="title" style="color:black;" >Available Trips</h1>
+
+      <!-- <span class="button icon-right " style="background-color: transparent; border-color: transparent;color:black;"><strong>Bal:&nbsp;${{bal}}</strong></span> -->
+	   <button class="button icon-right ion-log-out" ng-click="signout()" style="background-color: transparent; border-color: transparent;color:black;"></button>
+    </ion-header-bar>   
+
+        </div>    
+<ion-nav-view overflow-scroll="true" >
+    <ion-content  >
+	<label class="item item-input item-floating-label" style="background-color:#aaa;padding:15px;" >
+	<p style="font-family:helvetica,sans-serif;color:white;font-size:20px;text-align:center;"><b>Balance : ${{bal}}</b></p>
+	
+	</label>
+<!--      <div  onload="reloadPage();">-->
+           
+               
+           
+			<div width="80%"  ng-repeat="x in dbValue" class="list" >
+              <!--   <label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Customer ID : 
+                     &nbsp;<span ng-bind="x.id"> </span>            
+                </label> -->
+                
+               <!--  <label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Name : 
+                    &nbsp;<span ng-bind="x.name"> </span>             
+                </label> -->
+					<table style="font-family:helvetica,sans-serif; font-size:14px;" class="item item-input">
+	
+		<tr>
+		<td><b>Pickup</b></td>
+		</tr>
+		
+		<tr>
+		<td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.pickup}}</td>
+		</tr>
+			<tr>
+		<td><b>Destination</b></td>
+		</tr>
+		
+		<tr>
+		<td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.destination}}</td>
+		</tr>
+			<tr>
+		<td><b>Book Time</b></td>
+		</tr>
+		
+		<tr>
+		<td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.booktime}}</td>
+		</tr>
+			<tr>
+		<td><b>No. of Passenger</b></td>
+		</tr>
+		
+		<tr>
+		<td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.noofpass}}</td>
+		</tr>
+			<tr>
+		<td><b>Payment Method</b></td>
+		</tr>
+		
+		<tr>
+		<td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.pymtmethod}}</td>
+		</tr>
+			<tr>
+		<td><b>Package Fare</b></td>
+		</tr>
+		
+		<tr>
+		<td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.packagefare}}</td>
+		</tr>
+		</table>
+                
+                <label style="font-size:15px;font-family:helvetica,sans-serif;" class="item item-input" > Pickup<span style="margin-left:34px;"">:</span>
+                    <span style="margin-left:12px;overflow: hidden; text-overflow: ellipsis; white-space: normal; text-justify: distribute;" ng-bind="x.pickup" > </span>             
+                </label>
+                
+                <label style="font-size:15px;font-family:helvetica,sans-serif;" class="item item-input"> Destination&nbsp;&nbsp;: 
+                    &nbsp;<span style="margin-left:5px; overflow: hidden; text-overflow: ellipsis; white-space: normal; text-justify: distribute;" ng-bind="x.destination"> </span>
+                </label>
+                
+                 <label style="font-size:15px;font-family:helvetica,sans-serif;" class="item item-input"> Book Time&nbsp<span style="margin-left:10px;"">:</span><span style="margin-left:12px;" ng-bind="x.booktime">  </span>            
+                </label>
+             <!--     <label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Phone No : 
+                     &nbsp;<span ng-bind="x.phoneno"></span>              
+                </label> -->
+				<label style="font-size:15px;font-family:helvetica,sans-serif;" class="item item-input"> No. of <br>Passenger<span style="margin-left:10px;"">:</span>
+                     <span style="margin-left:12px;" ng-bind="x.noofpass"></span>              
+                </label>
+				<!-- <label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Car Type : 
+                     &nbsp;<span ng-bind="x.picktype"></span>              
+                </label> -->
+                <label style="font-size:15px;font-family:helvetica,sans-serif;" class="item item-input"> Payment <br/> Method <span style="margin-left:15px;"">:</span> 
+                     &nbsp;<span style="margin-left:10px;" ng-bind="x.pymtmethod"></span>              
+                </label>
+				 <label style="font-size:15px;font-family:helvetica,sans-serif;" class="item item-input"> Package <br/> Fare <span style="margin-left:15px;"">:</span> 
+                     &nbsp;<b><span style="margin-left:10px;" ng-bind="x.packagefare"></span> </b>             
+                </label>
+			<!-- 	<label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Package Type : 
+                     &nbsp;<span ng-bind="x.pkgdesc"></span>              
+                </label> -->
+               <table>
+    <tr>
+        <td valign="right">
+          <div class="padding">
+		  <input type="hidden"  name="currbal" id="currbal" ng-value="currbal" />
+  <button class="button button-block button-positive" style="background-color: #eb2135; border-color:#34495E !important; " ng-click="accept(x.id)" ng-disaabled="myBtn">Accept</button>
+  
+</div></td>
+
+</tr>
+</table>   
+
+<!-- <div class="padding" style="width:40%;">
+		  <input type="hidden"  name="currbal" id="currbal" ng-value="currbal" />
+  <button class="button button-block button-positive" style="background-color: #eb2135; border-color:#34495E !important; " ng-click="accept(x.id)" ng-disaabled="myBtn">Accept</button>
+  
+</div>  -->            
+                         
+       </div>
+             
+           
+       
+    </ion-content>
+	
+	</ion-nav-view>
+	
+            </ion-side-menu-content>
+	
+	<ion-side-menu side="left">
+                  <ion-header-bar class="bar-stable" style="background-color:#eb2135;height:150px;">
+				  <div ng-repeat="x in dbValue1"> 
+                      <h1 class="title" style="margin-top:75px;color:white"><span ng-bind="x.username"> </span>&nbsp;&nbsp;<button ui-sref="userinfo" style="background-color:#eb2135;width: 40px;height: 20px;border: solid 1px #eb2135;
+                          border-radius: 10px"><img  src="img/edit-icon.png"></img></button></h1></div>
+                      <img src="img/displaycar.png" style="width:50px;height:50px;margin-left:110px;margin-top:25px;">
+                  </ion-header-bar>
+                  <ion-content class="custom has-header" >
+                      <ion-item><br><br><br><br><br>
+                  <ion-list >
+                     <ion-item class="borderlesslist" menu-close href="#/topup"><img src="img/pay.png">&nbsp;&nbsp;Top-Up</img></ion-item>
+                   </ion-list>
+                  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/driverhistory"><i class="icon ion-android-alarm-clock"></i>&nbsp;&nbsp;History</ion-item>
+                  </ion-list>
+				  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/travelprogress"><i class="icon ion-model-s"></i>&nbsp;&nbsp;Track Job</ion-item>
+                  </ion-list>
+                  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/notify"><i class="icon ion-android-notifications"></i>&nbsp;&nbsp;Notifications</ion-item>
+                  </ion-list>
+                  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/support"><i class="icon ion-android-call"></i>&nbsp;&nbsp;Support</ion-item>
+                  </ion-list>
+                  
+                  <ion-list>
+                     <ion-item class="borderlesslist" menu-close href="#" onclick="window.open('market://details?id=com.primefield.gocarasia&hl=en', '_system');"><i class="icon ion-iphone"></i>&nbsp;&nbsp;Rate our App</ion-item>
+                  </ion-list><br><br><br><br><br><br><br>
+				  
+                  </ion-content>
+                  </ion-item>
+                      
+            </ion-side-menu>
+    </ion-side-menus>
+<!-- 	    <div class="tabs tabs-icon-left" >
+     
+        
+  <a class="tab-item " ui-sref="topup" style="max-width:110px;font-family:helvetica;font-size:12px;">
+      <b>Top-Up</b>
+
+</a>
+<a class="tab-item " ui-sref="signout" style="max-width:110px;font-family:helvetica;font-size:12px;">
+      <b>LogOff</b>
+
+</a>
+
+</div> -->
+<!-- </div> -->
+</div>

@@ -1,0 +1,231 @@
+/** Main control styles */
+.diagramCanvas {
+	cursor: move;
+}
+
+.mainToolbar {
+	-moz-background-clip: border-box;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding-box;
+	background: white none repeat scroll 0 0;
+	border: 1px solid #C3D9FF;
+	padding: 0;
+}
+
+.loadingScreen {
+	border: none;
+}
+
+.loadingText {
+	font-family: Arial;
+	font-size: 12pt;
+	color: #AAA;
+}
+
+/***** gwt-SliderBar *****/
+.gwt-SliderBar-shell {
+	-moz-background-clip: border-box;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding-box;
+	background: url("player-back.png") repeat-x scroll 0 0 transparent;
+	border: 1px outset #CCCCCC;
+	height: 26px;
+	width: 50%;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-line {
+	background-color: #DEDACE;
+	border: 1px inset #CCCCCC;
+	height: 3px;
+	overflow: hidden;
+	top: 9px;
+	width: 85%;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-knob {
+	top: 3pt;
+	/*width: 11px;
+  height: 21px;*/
+	z-index: 1;
+	cursor: pointer;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-tick {
+	top: 12pt;
+	width: 1px;
+	height: 8pt;
+	background: black;
+	overflow: hidden;
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-label {
+	top: 2pt;
+	font-size: 8pt;
+	cursor: default;
+}
+
+.gwt-SliderBar-shell-focused {
+	
+}
+
+.gwt-SliderBar-shell .gwt-SliderBar-line-sliding {
+	background-color: #DDDDDD;
+	cursor: pointer;
+}
+
+/***** gwt-PushButton *****/
+.toolBarButton-up,.toolBarButton-up-hovering,.toolBarButton-up-disabled
+	{
+	border: 1px outset #CCCCCC;
+	cursor: pointer;
+}
+
+.toolBarButton-down,.toolBarButton-down-hovering,.toolBarButton-down-disabled
+	{
+	border: 1px inset #666666;
+	cursor: pointer;
+}
+
+.toolBarButton-up,.toolBarButton-up-hovering,.toolBarButton-up-disabled
+	{
+	padding: 5px;
+}
+
+.toolBarButton-down,.toolBarButton-down-hovering,.toolBarButton-down-disabled
+	{
+	padding: 5px;
+}
+
+.toolBarButton-up,.toolBarButton-up-hovering,.toolBarButton-up-disabled,.toolBarButton-down,.toolBarButton-down-hovering,.toolBarButton-down-disabled
+	{
+	-moz-background-clip: border-box;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding-box;
+	background: url("player-back.png") repeat-x scroll 0 0 transparent;
+	margin: 0;
+	text-decoration: none;
+}
+
+.toolBarButton-up-disabled img{ 
+    opacity:0.4; filter:alpha(opacity=40);
+}
+
+.linkToolBarButton {
+	padding: 6px;
+	background-color: #f3f1eb;
+}
+
+/***********************************\
+ * Link tool-bar items related CSS *
+\***********************************/
+.link-toolbar-item {
+	border: 1px outset #FFFFFF;
+	padding: 0px;
+}
+
+/***************************************************\
+ * Linked tool-bar diagram pop-up item related CSS *
+\***************************************************/
+.diagram-list-container {
+	padding-left: 0px;
+	border: 1px solid #CCCCCC;
+        border-bottom: 0px;
+        -moz-box-shadow: -2px -2px -2px #ccc; -webkit-box-shadow: -2px -2px -2px #ccc; box-shadow: -2px -2px 2px #ccc;
+
+}
+
+.diagram-list td {
+	padding-left: 5px;
+	padding-right: 5px;
+    padding-top: 2px;
+	background-color: #f3f1eb;
+	border: 0px solid #C6DAFD;
+}
+	
+.diagram-list td:hover{
+    background-color: #CCCCCC;
+}
+ 
+
+a.diagram-list-item {
+	text-decoration: none;
+	color: #417EC5;
+}
+
+a.diagram-list-item:link {
+	text-decoration: none;
+	color: #417EC5;
+}
+
+a.diagram-list-item:hover {
+	text-decoration: none;
+	 color: #417EC5;
+}
+
+a.diagram-list-item:active {
+	text-decoration: none;
+	color: #417EC5;
+}
+
+a.diagram-list-item:visited {
+	text-decoration: none;
+	color: #417EC5;
+}
+
+.object-div-container {
+	position : absolute;
+        border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px;
+    	border: 1px solid #FFFFFF;
+        padding: 4px;
+        padding-right: 5px;
+        margin-top:-4px;
+        margin-left: -4px;
+        -moz-box-shadow: 0px 0px 5px 1px #333333; -webkit-box-shadow: 0px 0px 5px 1px #333333; box-shadow: 0px 0px 5px 1px #333333;
+		/* For IE 8 */
+		-ms-filter: progid:DXImageTransform.Microsoft.Shadow( Strength=5, Direction=0, Color='#333333' );
+		/* For IE 5.5 – 7 */
+		filter: progid:DXImageTransform.Microsoft.Shadow( Strength=5, Direction=0, Color='#333333' );
+}
+
+.linkToolBarButton {
+	padding: 6px;
+	background-color: #f3f1eb;
+}
+
+.highlight-link {
+	cursor: pointer;
+}
+
+.creatly-push-button {
+	-moz-background-clip: border-box;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding-box;
+	background: url("player-back.png") repeat-x scroll 0 0 transparent;
+	margin: 0;
+	text-decoration: none;
+	border: 1px outset #CCCCCC;
+	padding: 3px;
+}
+
+.creatly-push-button img {
+	position: relative;
+	left: 3px;
+	top: 3px;
+}
+
+.creatly-push-button-up-disabled img{
+    opacity:0.4; filter:alpha(opacity=40);
+}
+
+/* Style class used in label/text in link-tool-bar anchor image */
+.creatly-push-button-up-disabled label {
+	color: #666666;
+}
+
+/* Style class used in label/text in link-tool-bar anchor image */
+.creatly-push-button label {
+	position: relative;
+	left: 6px;
+	top: -1px;
+	padding-right: 9px;
+}

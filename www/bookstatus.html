@@ -1,0 +1,44 @@
+<div  ng-controller="bookstatusCtrl" >
+    <ion-header-bar style="background-color: #5773c0;">
+                <button class="button icon-left ion-android-arrow-back" ui-sref="map" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white">{{headername}}</h1>
+     
+
+    </ion-header-bar>
+   <!--  <img id="main-banner-image" src="img/icon/GoCar-Logo4.png" /> -->
+    <img id="main-banner-image" src="" style="background-color:#5773c0;"/>
+	
+    <ion-content style="margin-top: 20px;" >
+        <div class="signin-box" style="width: 90%; margin: 10px auto 0; background-color:#5773c0 !important; color:white; text-align: center; padding: 25px; position: relative;height:100%;" >
+        <div class="card" style="text-align: center; background-color: transparent; box-shadow: inherit;margin: -20px -17px;">
+
+            <p style="font-size:18px; padding:30px;">Your booking is confirmed!</p>
+            
+            
+            
+        </div>
+    <div class="list" style='padding:30px;' >
+        <div id="searchingmsg" ng-show="showA">
+            <strong><center>Searching drivers for you...</center></strong><br/>
+	
+  
+        
+        </div>
+        <div class="list" class="item" style='padding:10px;' ng-show="showB" >
+            <div  ng-repeat="x in dbValue">
+              
+                <h2><strong>DriverID</strong> {{x.id}}</h2>
+              <p><strong>Name :&nbsp;&nbsp;{{x.name}}</strong> </p>
+			  <p><strong>Model :&nbsp;&nbsp;<span style="text-transform: uppercase;">{{x.carmodel}}</span></strong> </p>
+			  <p><strong>Car Number :&nbsp;&nbsp;<span style="text-transform: uppercase;">{{x.carnumber}}</strong></p>
+              <p><strong>HP :&nbsp;&nbsp;<a href="#" style="color:white" onclick="window.open(document.getElementById('mobilenutemp').value,'_system','location=yes')"  >+65 {{x.mobilenumber}}</a>
+			  <input type="hidden" value="tel:+65-{{x.mobilenumber}}" id="mobilenutemp" >
+			   
+			   </strong></p>
+
+    </div>
+        </div>
+       <center><img src="img/icon/logo2.png" style="top:30px;position:relative;" width="150px" alt="logo"></center> 
+    </ion-content>
+	
+</div>

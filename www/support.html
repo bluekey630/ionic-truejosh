@@ -1,0 +1,49 @@
+
+<div ng-controller="supportCtrl" ng-init="toggleGroup(1)" style="background-color:#5773c0">
+    <div class="bar bar-header bar-balanced" style="background-color:#5773c0;">
+        <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="background-color:#5773c0 ; border-color: transparent;color:white;"></button>
+        <h1 class="title" style="color:white;">Support</h1>
+        </div><p>&nbsp;</p> <br><br>
+    
+            <ion-content overflow-scroll="true" style="margin-top:44px;">
+			 <div class="list">
+			       <ion-item class="item-accordion" style="background-color:#5773c0">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Please share your passion</span>
+                    <textarea  ng-model="description" id="miscinfo-description" rows="10" cols="50" placeholder="Please share your passion" maxlength="200" style="background-color:#5773c0;color:white"></textarea>
+                    
+                </label>
+				            <div width="80%" class="list list-inset" style="margin-left:10%;margin-right:10%;">
+
+           <!--  <input type="hidden"  name="cartypename" id="cartype" ng-value="carType" /> -->
+                <button class="button button-full button-positive" ng-click="miscsave(description);" style="background-color: #5773c0;border-color: white;color:white;margin-top:0px;margin-bottom:0px;border-left:1px solid white;border-right:1px solid white">
+                  Submit
+                </button>
+            </div>
+              <!--   <div class="padding button-bar" style="height: 75px !important">
+                    <button class="button button-positive" ng-click="miscsave(description);" style=" background-color:#eb2135;   border-color: transparent;margin: 3px;max-width: 115px;height: 50px;" >Submit</button>
+                </div> --> 
+            </ion-item> 
+			</div>
+			    
+            
+       
+                    <b class="wds" style="opacity:1;top:8px; margin-left:22px; font-size:15px;color:white">  Instant Support</b><br><br>
+                      
+                    <a href="#" onclick="window.open('tel:+65-81212327','_system','location=yes')"  style="margin-left:20px;color:white">+65 8121 2327 (Djony)</a><br/><br/>
+                
+                    <a href="#" onclick="window.open('tel:+65-96704669','_system','location=yes')" style="margin-left:20px;color:white">+65 9670 4669 (Tomo)</a><br/><br/>
+                    
+                    <a href="#" onclick="window.open('tel:+65-69662969','_system','location=yes')" style="margin-left:20px;color:white" >+65 6966 2969 (Office)</a><br><br/>
+                    
+                    
+                    
+                    
+        <!-- <input type="hidden" ng-model="location" id="location" >
+		<a href="#" onclick="window.open('geo://?q='+document.getElementById('location').value, '_system');" data-rel="external">Test</a> -->
+                        
+                        <!-- <a href="#" onclick="window.open('comgooglemaps://?q='+document.getElementById('location').value);">test</a> -->
+    </ion-content>
+</div>
+
+

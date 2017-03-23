@@ -1,0 +1,46 @@
+<div  ng-controller="choosedateCtrl" class="ionic primary-bg-color">
+    
+  <div>
+            
+            <ion-header-bar style="background-color: #eb2135;">
+      <h1 class="title">Pick Date</h1>
+    </ion-header-bar>
+        </div>
+    
+<!--    <ion-content style="margin-top: 44px;" overflow-scroll="true">-->
+        <ion-content style="margin-top: 44px;">
+        <div class="list" >
+            
+        
+                      <div style="margin-left:28px;">
+                          <h4>Select Your Travel Date and Time </h4>
+<!--                        <a href="javascript:NewCssCal('traveldate','yyyyMMdd','dropdown',true,'24',true)">
+                            <img src="img/cal.gif" width="16" height="16" border="0" alt="Pick a date">
+                        </a>
+	  		<span class="descriptions">Pick Your Date..</span><br/><br/>-->
+                        
+                        <label class="item item-input" >
+<!--                                <div class="row">-->
+                                    <a href="javascript:NewCssCal('traveldate','yyyyMMdd','dropdown',true,'24',true)" >
+                                        <img src="img/cal.gif" width="20" height="20" border="0" alt="Pick a date" >
+                                    </a>
+                                    <input type="text" id="traveldate" ng-model="traveldate" placeholder="Pick Your Date" style="margin-left:25px;" readonly="readonly">
+
+<!--                                </div>-->
+
+                            </label><br/><br/>
+                          		                        
+                <button class="button button-outline button-positive col-50" style="border-color: green;color:black;background-color: #eb2135" ng-click="confirm()" ng-disaabled="myBtn">
+                  Confirm
+                </button>
+	 
+
+                </div>
+         
+           
+        </div> 
+      
+ 
+        
+    </ion-content>
+</div>

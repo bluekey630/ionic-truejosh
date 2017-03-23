@@ -1,0 +1,129 @@
+
+<div  ng-controller="MapCtrl" class="ionic primary-bg-color" ng-init="toggleGroup(1)">
+    
+  <ion-side-menus>
+    <ion-side-menu-content>
+      <ion-header-bar class="bar-positive" class="bar header" style="background-color: #5773c0;">
+        <div class = "buttons">
+          <button  class="button icon button-clear ion-navicon-round" style="color:white;" ng-click="toggleLeft()"></button>
+        </div>
+        
+        <h1 class ="title" style="color:white;">Book True Josh</h1>
+               
+				<button class="button icon-right ion-log-out" ng-click="signout()" style="color:white; background-color: transparent; border-color: transparent;"> </button>
+                
+      </ion-header-bar>
+			
+      <ion-nav-view style="margin-top:10px;background-color:#5773c0">
+			  <ion-content scroll="true">
+<!--        <div style="overflow-y:  auto;">-->
+<!--<ion-scroll direction="xy" style="height: 900px">-->
+          <div class="row">
+    
+            <center>
+              <a onclick="window.open('http://www.buildhl.com/', '_system', 'location=yes'); return false;">
+                <img src="img/mobile_banner.png" style="width:100%;border:0px solid red;"/>
+              </a>
+            </center>          
+            
+          </div>
+          
+          <div ng-repeat="x in dbValue">
+
+            <h4 style="text-align:center;color:white">Welcome <b><span ng-bind="x.username"> </span></b> </h4>
+            <input type="hidden" id="hiddenuname" name="hiddenuname" ng-value="x.username" >
+          </div>
+        
+          <div ><br/>
+            <label class="item item-input item-floating-label" ><br/>
+  	          <span style="margin-left:10px;color:white">Select your vehicle below</span> <br><br/>
+  			      <div class="row" style="overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;" >
+                  
+                  <ion-radio style="min-width:48%;text-align:center;" ng-model="carType" ng-value="'gold'">Xpress<br/>(4 Seater)</ion-radio>
+                  &nbsp;&nbsp;
+                   <ion-radio  style="min-width:48%; text-align:center;" ng-model="carType" ng-value="'mpv'">MPV<br/>(6 Seater)</ion-radio>
+              </div>
+  			      <br/>
+              <div class="row" >            
+                  
+              </div>
+			
+            </label>    
+		      </div>
+            
+			
+          <div width="80%" class="list list-inset" style="margin-left:10%;margin-right:10%;">
+
+            <input type="hidden"  name="cartypename" id="cartype" ng-value="carType" />
+              <button class="button button-full button-positive" ng-click="saveDetails()" style="background-color:#5773c0;border:1px solid white;margin-top:0px;margin-bottom:0px">
+                  Book Your Trip
+              </button>
+                
+          </div>
+
+          <div width="80%" class="list list-inset" style="margin-left:10%;margin-right:10%;">
+
+              <button class="button button-full button-positive" ng-click="goPromotion()" style="background-color:#5773c0;border:1px solid white;margin-top:0px;margin-bottom:0px">
+                  Promotion
+              </button>
+                
+          </div>
+            
+          <div class="row" width="100%" align="center" style="text-align:center">          		 
+            <!-- EA UPDATE 6 Dec 2016 - added in true heart button -->
+            <button style="width: 100px;height: 100px;border:0;margin:auto;background-color:#5773c0" ng-click ="saveDetails1()" ><img  src="img/icon/btn-free-rides.png" width="100px" height="100px"/></button>
+                
+          </div>               
+                
+          <div class="row" style="text-align:right;padding-right:20px;color:white">
+            <span style="margin-left:auto">Build HL Pte Ltd</span>
+          </div>
+                
+          <div style="margin-top:50px">&nbsp;</div>
+<!--</ion-scroll>-->
+<!--        </div>-->
+        </ion-content >
+			</ion-nav-view>
+    </ion-side-menu-content>
+<!--                <ion-pane ion-side-menu-content>-->
+<!--                    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>-->
+<!--               </ion-pane>-->
+    <ion-side-menu side="left">
+      <ion-header-bar class="bar-stable" style="background-color:#5773c0;height:150px;">
+				<div ng-repeat="x in dbValue"> 
+          <h1 class="title" style="margin-top:75px;color:white">
+          <span ng-bind="x.username"> </span>&nbsp;&nbsp;<button ui-sref="userinfo" style="background-color:#5773c0;width: 40px;height: 20px;border: solid 1px #5773c0;
+                          border-radius: 10px"><img  src="img/edit-icon.png" /></button></h1></div>
+                      <img src="img/logo3.png" style="width:50px;height:50px;margin-left:110px;margin-top:25px;" />
+                  
+                  </ion-header-bar>
+                  <ion-content class="custom has-header" >
+                      <ion-item><br><br><br><br><br>
+                  <ion-list >
+                     <ion-item class="borderlesslist" menu-close href="#/addcardmenu"><img src="img/pay.png" />&nbsp;&nbsp;True Josh Pay</ion-item>
+                   </ion-list>
+                  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/history"><i class="icon ion-android-alarm-clock"></i>&nbsp;&nbsp;History</ion-item>
+                  </ion-list>
+				   <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/scheduled"><i class="icon ion-android-alarm-clock"></i>&nbsp;&nbsp;Scheduled</ion-item>
+                  </ion-list>
+                  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/notify"><i class="icon ion-android-notifications"></i>&nbsp;&nbsp;Notifications</ion-item>
+                  </ion-list>
+                  <ion-list>
+                      <ion-item class="borderlesslist" menu-close href="#/support"><i class="icon ion-android-call"></i>&nbsp;&nbsp;Support</ion-item>
+                  </ion-list>
+                  
+                  <br><br><br><br><br><br><br>
+				  
+                 
+                  </ion-item>
+                      
+                       </ion-content>
+                      
+            </ion-side-menu>
+
+    </ion-side-menus>
+   
+</div>

@@ -1,0 +1,170 @@
+<div ng-form name="myForm" ng-controller="riderDest" ng-init="toggleGroup(1)" style="background-color:#5773c0">
+<div>  
+    
+            <ion-header-bar style="background-color: #5773c0;">
+                <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white">True Josh</h1>
+      <button class="button icon-right ion-log-out" ui-sref="signout" style="background-color: transparent; border-color: transparent;color:white"></button>
+
+    </ion-header-bar>
+
+        </div>
+    <ion-content style="margin-top:44px;background-color:#5773c0;">
+						
+	
+        <div>
+            <!-- <div id="map2" lat="1.290270" lng="103.851959" style="height:300px;" zoom="8" map></div> -->
+         
+          <!--   <div width="80%"  style="margin-left:10%;margin-right:10%;"> -->
+	
+<!--                <label class="item item-input">Package</label>-->
+
+              <div style="background-color:#5773c0">
+      <label class="item item-input" style="background-color:#5773c0;color:white">Pick Up From</label>
+      <ion-google-place placeholder="Pick Up From" ng-model="data.address" required name="PickupFrom" location-changed="locationChangedfrom" style="background-color:#5773c0;color:white"/>
+	  </div >
+	  <div >
+      <label class="item item-input" style="background-color:#5773c0;color:white">Destination</label>
+	  <ion-google-place placeholder="Destination" ng-model="data.address2" required name="Destination" location-changed="locationChangeddest"
+      style="background-color:#5773c0;color:white"/>
+	  </div>
+
+	 
+	 
+	<div> 
+		<input type="hidden"  name="pickfrom" id="pickfrom" ng-model="pickfrom" ng-value="pickfrom" />
+		<input type="hidden"  name="destination" id="destination" ng-model="destination" ng-value="destination" />
+	 </div> 
+                <div ng-show="showJB" style="background-color:#5773c0">
+				<label class="item item-input" style="background-color:#5773c0">
+					
+                <select  ng-model="mySelect" ng-change="showSelectValue(mySelect)" style="width:240px;padding-top: 10px;padding-bottom: 10px;background-color: rgb(87, 115, 192);border-radius: 6px;color: white;">
+                    <option value="">Please Select Your Package</option>
+                    <option value="pkg01">AirportTransfer</option>
+                    <option value="pkg02">CityLimit</option>
+                    <option value="pkg03">OutofCity</option>
+                    <option value="pkg04">Hourly (Min 4 hrs & above)</option>
+                    <option value="pkg05">SG CityTour (8 hrs & above)</option>
+                    <option value="pkg06">JB Transfer (1 Way)</option>
+                    <option value="pkg07">JB Transfer (2 Way)</option>
+                    <option value="pkg08">JB CityTour (Per hr)</option>
+    
+                </select>
+                 </label>
+				 </div>
+				 <div ng-show="showSG" style="background-color:#5773c0">
+					<label class="item item-input" style="background-color:#5773c0">
+                    
+                <select  ng-model="mySelect" ng-change="showSelectValue(mySelect)" style="width:240px;padding-top: 10px;padding-bottom: 10px;background-color: rgb(87, 115, 192);border-radius: 6px;color: white;">
+                    <option value="">Please Select Your Package</option>
+                    <option value="pkg01">AirportTransfer</option>
+                    <option value="pkg02">CityLimit</option>
+                    <option value="pkg03">OutofCity</option>
+                    <option value="pkg04">Hourly(4 hrs & above)</option>
+    
+                </select>
+                    
+                    </label>
+                </div>
+				<p ng-show="showJbdesc" style="text-align:center;background-color:red;color:white;padding-top:10px;">SG to JB & JB to SG which includes JB CityTour&nbsp;</p>
+				
+                <label class="item item-input" style="background-color:#5773c0;color:white">Fare SGD&nbsp;</label>
+                <label class="item item-input" style="background-color:#5773c0;color:white">
+                     <input type="text" ng-model="fare" placeholder="" >
+                </label>
+				
+				  
+                <label class="item item-input" style="background-color:#5773c0;color:white">
+                     <input type="text" ng-model="noofpass" placeholder="No of Passenger" >
+                </label>
+					<label class="item item-input" style="background-color:#5773c0;color:white">
+                  <select ng-model="mySelectpymt" style="width:240px;padding-top: 10px;padding-bottom: 10px;background-color: rgb(87, 115, 192);border-radius: 6px;color: white;">
+                    <option value="">Please Select Payment Method</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                        
+                </select>
+                </label>
+                
+                <!-- <label class="item item-input">
+                     <input type="text" ng-model="pickfrom" placeholder="PickupFrom">
+                     
+              
+                </label> -->
+
+			
+                <!-- <label class="item item-input ">
+                     
+                  
+                   <input type="text" ng-model="destination" placeholder="Destination"  >
+                    
+                </label>
+ -->
+<!--            <div class="row">-->
+
+                <input type="hidden" ng-model="phoneno" placeholder="Mobile Number" >
+				
+	 
+      
+	  
+<!--                <span class="error" ng-show="myForm.phoneno.$error.required">Required!</span>
+      <span class="error" ng-show="myForm.phoneno.$error.minlength">Phone no not less that 10 char.</span>
+      <span class="error" ng-show="myForm.phoneno.$error.maxlength">Phone no not more than 11 char.</span>
+      <br><span class="error" ng-show="myForm.phoneno.$error.pattern">Please match pattern [+91-036-78658 || 91-036-78658]</span>-->
+<!--                <ion-radio class="col-50" ng-model="pickType" ng-value="'InCity'">In city</ion-radio>
+                <ion-radio class="col-50" ng-model="pickType" ng-value="'Airport'">To AirPort</ion-radio>-->
+<!--            </div>-->
+             
+   
+              
+  
+<!--            <div class="row">-->
+                <input type="hidden" ng-model="name"   >
+
+<!--            </div>-->
+             
+     
+                 
+  
+                
+                <input type="hidden" ng-model="picktype" placeholder="picktype"  >
+<!--                <label class="item item-input item-floating-label">
+             <label>Select Taxi Type</label>
+             <div class="row">
+                
+                <ion-radio class="col-50" ng-model="picktype" ng-value="'Standard'">Standard</ion-radio>
+                <ion-radio class="col-50" ng-model="picktype" ng-value="'Economy'">Economy</ion-radio>
+                     
+            </div>
+              <div class="row">                
+                 <ion-radio class="col-50" ng-model="picktype" ng-value="'Premium'">Premium</ion-radio>
+                <ion-radio class="col-50" ng-model="picktype" ng-value="'Limo'">Limo Taxi</ion-radio>
+             
+            </div>
+        </label>     -->
+
+
+
+            <div class="row" style="">
+                <button class="button button-outline button-positive col-50" style="border-color:white;color:white;background-color: #5773c0" ng-click="pickNow(pickfrom,destination,phoneno,name,fare,mySelectpymt,noofpass,picktype)" ng-disaabled="myBtn">
+                  Pick Now
+                </button>&nbsp;&nbsp;
+                 <button class="button button-outline button-positive col-50" style="border-color:white;color:white; background-color: #5773c0" ng-click="PickLater(pickfrom,destination,phoneno,name,fare,mySelectpymt,noofpass,picktype)" ng-disaabled="myBtn">
+                  Pick Later
+                </button>
+            </div>
+			<input type="hidden"  name="pymtmethod" id="pymtmethod" ng-value="mySelectpymt" />
+<!--                <div class="row">
+                <button class="button button-full button-positive" style="border-color: black;" ng-click="">
+                  Next
+                </button>
+                 
+            </div>-->
+             
+               
+            <!--    </label> -->
+           <!--  </div> -->
+        </div>
+
+    </ion-content>
+</div>

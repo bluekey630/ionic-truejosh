@@ -1,0 +1,621 @@
+html {
+  overflow-x: hidden !important;;
+}
+body, .ionic-body {
+  overflow: scroll;
+  overflow-x: hidden !important;;
+}
+.pane, .view {
+  /*overflow: scroll;*/
+  overflow-x: hidden !important;;
+}
+ionic over write*/
+.mypic{
+  height: 102px !important;
+  width: 102px !important;
+}
+
+/*.button-bar{
+  height: 110px !important;
+}*/
+
+.search {
+    width: 450px;
+    padding: 5px;
+    margin: 15px;
+    height: 25px;
+    background-image: url('img/Black_search.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.scroll { 
+  min-width: 100%;
+}
+.center{
+  display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+/*html {
+  box-sizing: border-box;
+}
+html * {
+  box-sizing: inherit;
+}
+ion-scroll[direction=x] {
+  width: 100vw;
+}
+ion-scroll[delegate-handle=calendarScroll] {
+  height: 90px;
+}
+ion-scroll[direction=y] {
+  height: calc(100vh - 33px - 33px - 90px - 15px);
+}
+body > header,
+ion-footer-bar {
+  height: 33px;
+}*/
+
+
+/*ionic over write*/
+
+.faq-qstn {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-top: 1px solid #e0e0e0;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+}
+.float-right {
+  float:right;
+}
+.rotate-88 {
+    -ms-transform: rotate(88deg); /* IE 9 */
+    -webkit-transform: rotate(88deg); /* Chrome, Safari, Opera */
+    transform: rotate(88deg);
+    transition: transform ease 0.5s;
+    -moz-transition: transform ease 0.5s;
+    -webkit-transition: transform ease 0.5s;
+    -o-transition: transform ease 0.5s;
+    -ms-transition: transform ease 0.5s;
+}
+.rotate-0 {
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    transition: transform ease 0.5s;
+    -moz-transition: transform ease 0.5s;
+    -webkit-transition: transform ease 0.5s;
+    -o-transition: transform ease 0.5s;
+    -ms-transition: transform ease 0.5s;
+}
+.rotate-90 {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: transform ease 0.5s;
+    -moz-transition: transform ease 0.5s;
+    -webkit-transition: transform ease 0.5s;
+    -o-transition: transform ease 0.5s;
+    -ms-transition: transform ease 0.5s;
+}
+.faq-ans {
+    display: none;
+    /*padding-left: 1%;*/
+}
+
+/*.listdemoListControls md-divider {
+  margin-top: 10px;
+  margin-bottom: 10px; }*/
+
+.forgetpassword{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.profile-pic-container{
+  margin:auto;
+  display: table;
+}
+
+.profile-pic{
+  width:120px;
+  height:120px;
+  margin:10px;
+}
+
+.pic-border {
+  border:1px solid #34495E;
+  border-radius: 55px;
+}
+
+
+.select-wheel > ion-scroll {
+  height: 150px;
+}
+
+select-wheel {
+  position: relative;
+}
+
+.select-wheel-item {
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+.select-wheel-item > * {
+  color: #aaa;
+}
+
+.select-wheel-item .active {
+  color: inherit;
+}
+
+.select-wheel {
+  position: relative;
+   
+}
+
+.select-wheel-sel {
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  height: 50px;
+  left: 50%;
+  width: 100px;
+   
+  margin-left: -50px;
+  border-top: 1px solid #3232d4;
+  border-bottom: 1px solid #3232d4;
+}
+
+
+
+/*
+Sign up for free to join this conver/* Empty. Add your own CSS if you like */
+
+/*.profile_picture_name{
+    display: inline-flex;
+    width: 200px;
+    text-align: center;
+    color: #FFF;
+    font-size: 13px;
+}
+
+.input{
+    border: none;
+}*/
+
+
+/*img {
+  width: 100%;
+  height: auto;
+}*/
+
+/*.two-columns {
+  width: 48%;
+  display: inline-block;
+  border-color:#34495E;
+}
+
+.container {
+  position: relative;
+  width: 96%;
+  max-width: 360px;
+  margin: 1% auto 0 auto;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  padding: 10px;
+  width: 46%;
+  max-width: 200px;
+  text-align: center;
+  background: #FF8900;
+  color: #fff;
+  text-decoration: none;
+}*/
+
+
+ /* HAN CSS */
+/**********/
+/**{
+  font-family: 'Lato', sans-serif;
+}
+
+.md-subheader:not(.md-sticky-no-effect):after {
+  right:0px;
+}
+
+.md-subheader {
+  margin-right:0px;
+}
+
+.wrapper{
+  width:100%;
+}
+
+.panel-body {
+  padding:0px;
+}
+
+.panel-group {
+  margin-bottom:-1px;
+}
+
+.md-toolbar-tools h3{
+  color:#FFF;
+}
+
+.catch-phrase{
+  font-size:20px;
+  color:#777;
+  text-align: center;
+  padding:20px 10px;
+}
+
+.field-container{
+  margin:5px;
+  background-color: #FFF;
+  padding:0px 10px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+
+md-toolbar{
+  background-color: #34495E;
+}
+
+body, md-content{
+  background-color:#5C787B;
+  overflow-x: hidden;
+}
+
+#videodiv{
+  margin:auto;
+  display:table;
+}
+
+.back-nav-button{
+  position: absolute;
+  top:10px;
+  left:10px;
+  width:40px;
+  height:30px;
+  border-radius: 5px;
+}
+
+.bg-darkblue{
+  background-color:#34495E;
+}
+
+.bg-red{
+  background-color: #F44336;
+}
+
+.red{
+  color:#F44336;
+}
+
+.bg-white{
+  background-color: #FFF;
+}
+
+.white{
+  color:#FFF;
+}
+
+.darkblue{
+  color:#34495E;
+}
+
+.panel-default>.panel-heading{
+  background-color: #FFF;
+}
+
+.panel-default>.panel-heading a{
+  color: #34495E;
+}
+
+.panel-default>.panel-heading a:hover{
+  color: #F44336;
+  text-decoration: none;
+}
+
+.panel.panel-default{
+  background-color: #F5F5F5;
+}*/
+
+.sign-up-image{
+  display: inline-block;
+  width:100px;
+  height:100px;  
+  margin:0px 0px 0px 20px;
+  vertical-align: top;
+}
+
+/*.md-raised.md-primary{
+  background-color: #34495E !important;
+  color:#FFF !important;
+  padding:0 10px;
+}
+
+.md-fab.md-primary{
+  background-color: #34495E !important;
+  color:#FFF !important;
+}
+.signup-upload-button-group{
+  display: inline-block;
+  padding-left:40px;
+  padding-top:5px;
+}
+
+.signup-upload-button-group .md-primary{
+  display:block;
+  width:120px;
+}
+
+.md-whiteframe-z1{
+  background-color: #5C787B;
+}
+.image-field-container{
+  padding:20px 0px;
+}
+
+
+
+.footer-button-group{
+  text-align: center;
+}
+
+.footer-button{
+  margin:10px auto;
+  display:table;
+}
+
+.welcome-text{
+  font-size:16px;
+  padding:10px 15px;
+  background-color: #FFF;
+}
+
+
+
+.company-profile-content{
+  padding:10px;
+}
+
+
+
+.profile-button{
+  width:140px !important;
+  padding:10px 0px !important;
+}
+
+#company-profile-name p{
+  padding:5px 0px;
+  margin:0;
+}
+
+#post-job-dropdown-container{
+  padding:0;
+}
+
+.collapse-content md-input-container.md-icon-float.md-default-theme{
+  margin-top:5px;
+  padding-bottom:0;
+}
+
+.collapse-content{
+  margin:0 0.5em !important;
+}
+
+#company-post-job-wrapper{
+  margin-bottom:10px;
+}
+
+.collapse-content.field-container.md-whiteframe-z1{
+  margin-top:0.5em !important;
+}
+
+.no-side-margin{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+#industry-dropdown li.ng-binding.ng-scope{
+  margin-left:5px !important;
+}
+
+md-input-container:not(.md-input-has-value) input:not(:focus){
+  color:#000;
+}*/
+
+/* DAREN */
+/* Sign in Page */
+#main-banner-image {
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+
+.signin-box {
+  padding-top:100px;
+}
+
+#signin card{
+  color: #777 !important;
+  text-align: center !important;
+  padding:25px 25px 0 25px !important;
+}
+
+#signin .md-whiteframe-z1 {
+  width:90%;
+  margin:0 auto;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+#signin .md-fab{
+  background-color: #34495E !important;
+}
+
+/* Employer-preview */ 
+/*#preview-container {
+  margin: 0 10px;
+}
+
+.preview-header {
+  background-color: #fff;
+  padding-left:10px;
+}*/
+
+
+/* Employer-preview */
+/*#preview-container {
+  margin: 0 4px;
+}
+
+#preview-pic md-card-content {
+  padding:20px 0;
+  text-align:center;
+}
+
+.pic-box {
+  text-align:center;
+}
+
+.preview-header {
+  background-color: #fff;
+  padding-left:13px;
+}
+
+.preview-block {
+  width:125px;
+  display:inline-block;
+  text-align:center;
+  margin-left:10px;
+}
+
+.j-preview-block {
+  width:100px;
+  display:inline-block;
+  text-align:center;
+  margin-left:10px;
+}
+
+.preview-block2 {
+  display:inline-block;
+  text-align:center;
+  margin-top:15px;
+}
+
+.preview-image{
+  width:100px;
+  height:100px;  
+  vertical-align: top;
+}*/
+
+/* Sign up Page */
+#signup-page .md-whiteframe-z1 {
+  width:90%;
+  margin:0 auto;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  text-align:center;
+  padding:20px;
+  margin-top:20px;
+}
+
+/*.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}*/
+.header-primary-bg-color {
+    background-color: darkseagreen !important;
+}
+.primary-bg-color {
+    background-color: white !important;
+}
+.primary-padding {
+    padding: 5px 10px;
+}
+
+
+.cust-row {
+    width: 100%;
+}
+.clear-fix {
+    clear: both;
+}
+.cust-col-50 {
+    width: 50%;
+    float: left;
+}
+.member {
+    text-align: right; 
+    padding:0px 15px;
+}
+.sign-up {
+    text-align: left; 
+    padding:0px 15px;
+}
+
+/* media screen section */
+@media screen and (max-width: 380px) {
+    .cust-tab {
+        height: 100%;
+    }
+    .member-sign-up .member, .member-sign-up .sign-up {
+        width: 100%;
+        text-align: center !important;
+        line-height: 25px;
+        padding: 10px;
+    }
+    .member-sign-up .sign-up {
+        padding: 0px;
+    }
+}
+/* media screen section */

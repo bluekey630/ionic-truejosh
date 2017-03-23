@@ -1,0 +1,102 @@
+
+<div ng-controller="driverscheduledCtrl" class="ionic primary-bg-color">
+<div>      
+            <ion-header-bar class="bar header" style="background-color: #5773c0;">
+			  <button class="button icon-left ion-android-arrow-back" onclick="window.history.back()" style="background-color: #5773c0; border-color: transparent;color: white;"></button>
+      <h1 class="title" style="color:white">Scheduled Trips</h1>
+
+     
+	   
+    </ion-header-bar>   
+
+        </div>    
+
+    <ion-content>
+<!--      <div  onload="reloadPage();">-->
+           
+			<div width="80%"  ng-repeat="x in dbValue" class="list"  >
+              <!--   <label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Customer ID : 
+                     &nbsp;<span ng-bind="x.id"> </span>            
+                </label> -->
+                
+               <!--  <label style="font-size:14px;font-family:helvetica,sans-serif;" class="item item-input"> Name : 
+                    &nbsp;<span ng-bind="x.name"> </span>             
+                </label> -->
+					<table style="font-family:helvetica,sans-serif; font-size:15px;" class="item item-input">
+	
+		<tr>
+		<td><b>Pick Up :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.pickup}}</td>
+		</tr>
+		
+		
+			<tr>
+		<td><b>Destination :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.destination}}</td>
+		</tr>
+		
+		
+			<tr>
+		<td><b>Book Time :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.booktime}}</td>
+		</tr>
+		
+		
+			<tr ng-show="showpass">
+		<td><b>No. of Passenger :</b></td>
+        <td ng-show="showpass" style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.noofpass}}</td>
+		</tr>
+		
+		
+			<tr>
+		<td><b>Payment Method :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">{{x.pymtmethod}}</td>
+		</tr>
+		
+		
+			<tr>
+		<td><b>Package Fare :</b></td>
+        <td style="padding:5px;overflow: hidden; text-overflow: ellipsis; white-space: normal;  text-justify: distribute;">${{x.packagefare}}</td>
+		</tr>
+		
+		
+		 <input type="hidden" value={{x.recid}} >
+		 <input type="hidden"  name="packagetype" id="packagetype" value="{{x.packagetype}}" />
+		    <!-- <tr>
+        <td valign="right">
+          <div class="padding">
+		  <input type="hidden"  name="currbal" id="currbal" ng-value="currbal" />
+  <button class="button button-block button-positive" style="background-color: #eb2135; border-color:#34495E !important; " ng-click="accept(x.id)" ng-disaabled="myBtn">Accept</button>
+  
+</div></td>
+
+</tr> -->
+		</table>
+                
+                
+               <table>
+    <tr>
+        <td valign="right">
+          <div class="padding">
+		  <input type="hidden"  name="currbal" id="currbal" ng-value="currbal" />
+  <button class="button button-block button-positive" style="background-color: #5773c0; border-color:white !important;color:white " ng-click="accept(x.id,x.recid)" ng-disaabled="myBtn">Scheduled Accept</button>
+  
+</div></td>
+
+</tr>
+</table>   
+
+<!-- <div class="padding" style="width:40%;">
+		  <input type="hidden"  name="currbal" id="currbal" ng-value="currbal" />
+  <button class="button button-block button-positive" style="background-color: #eb2135; border-color:#34495E !important; " ng-click="accept(x.id)" ng-disaabled="myBtn">Accept</button>
+  
+</div>  -->            
+                         
+       </div>
+             
+           
+        
+
+    </ion-content>
+
+</div>
